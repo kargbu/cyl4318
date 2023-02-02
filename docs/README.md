@@ -9,3 +9,7 @@ permalink: /docs/
 ---
 
 Aquí habrá material adicional sobre los temas del curso
+
+* [Ejemplo]{:.heading.flip-title} --- Ejemplo de contenido
+
+[Ejemplo]: ejemplo.md
