@@ -41,16 +41,16 @@ Se realizarán 3 tareas-examen que tendrán un valor del 90 % de la calificació
 
 ## Bibliografía
 
-José Alfredo Amor, Teoría de conjuntos, https://tienda.fciencias.unam.mx/es/inicio/808-teoria-de-conjuntos-para-estudiantes-de-ciencias-9789703224548.html
+* José Alfredo Amor, Teoría de conjuntos, https://tienda.fciencias.unam.mx/es/inicio/808-teoria-de-conjuntos-para-estudiantes-de-ciencias-9789703224548.html
 
-Herbert Enderton, Una introducción matemática a la lógica http://www.filosoficas.unam.mx/catalogo/?autores=enderton-herbert-b
+* Herbert Enderton, Una introducción matemática a la lógica http://www.filosoficas.unam.mx/catalogo/?autores=enderton-herbert-b
 
-Fernando Hernández, Teoría de conjuntos http://computo.fismat.umich.mx/~fhernandez/Papers/contenido_3a.pdf
+* Fernando Hernández, Teoría de conjuntos http://computo.fismat.umich.mx/~fhernandez/Papers/contenido_3a.pdf
 
-Carlos Iborra, Lógica y teoría de conjuntos. https://www.uv.es/ivorra/Libros/Logica.pdf
+* Carlos Iborra, Lógica y teoría de conjuntos. https://www.uv.es/ivorra/Libros/Logica.pdf
 
 ### Bibliografía adicional
 
-F.W. Lawvere, Matemáticas Conceptuales
+* F.W. Lawvere, Matemáticas Conceptuales
 
-F.W. Lawvere, Sets for Mathematics
+* F.W. Lawvere, Sets for Mathematics
