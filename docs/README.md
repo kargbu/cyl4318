@@ -10,6 +10,6 @@ permalink: /docs/
 
 Aquí habrá material adicional sobre los temas del curso
 
-* [Ejemplo]{:.heading.flip-title} --- Ejemplo de contenido
+* [Notas]{:.heading.flip-title}
 
-[Ejemplo]: ejemplo.md
+[Notas]: notas.md
