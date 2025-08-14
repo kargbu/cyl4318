@@ -1,0 +1,91 @@
+\documentclass{beamer}
+\usepackage{amsthm}
+
+\newtheorem{lema}{Lema}
+
+\usetheme{Madrid}
+
+\title{Teoría de Conjuntos}
+\author{Karina García Buendía}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}{Axiomas}
+    \begin{block}{Axioma 1: Existencia}
+        \textit {Existe un conjunto que no tiene elementos.}
+    \end{block}
+
+    \begin{block}{Axioma 2: Extensión}
+         \textit {Si todo elemento de $X$ es elemento de $Y$ y todo elemento de $Y$ es elemento de $X$, entonces
+         $X =Y$.}
+    \end{block}
+
+        \begin{block}{Axioma 3: Esquema de comprensión}
+            \textit {Sea una propiedad $P(x)$. Para cualquier conjunto $A$ hay un conjunto $B$ tal que $x \in B \Leftrightarrow$
+            $x \in A$ y $P(x)$.} 
+        \end{block}
+\end{frame}
+
+\begin{frame}
+    Ejemplo 1. Si $P$ y $Q$ son conjuntos, entonces hay un conjunto $R$ tal que $x \in R$
+    si y solo si $x \in P$ y $x \in Q$.
+\pause
+    \begin{proof}
+        Consideremos la propiedad de que $x \in Q$, es decir $P(x,Q)$. Por el axioma esquema de comprensión se tiene
+        que para todo $Q$ y cualquier $P$ hay un conjunto $R$ tal que $x \in R$ si y solo si $x \in P$ y $x \in Q$.
+    \end{proof}    
+\pause
+    Ejemplo 2. El conjunto de todos los conjuntos no existen.
+    \begin{proof}
+        Supongamos lo contrario.
+    \end{proof}
+\end{frame}
+
+\begin{frame}
+    \begin{lema}
+        Sea $P(x)$ una propiedad de $x$. Para todo conjunto $A$ hay un único conjunto $B$ tal que $x \in B$
+        si y solo si $x \in A$ y $P(x)$
+    \end{lema}
+\end{frame}
+
+\begin{frame}
+        \begin{block}{Axioma 4: del Par}
+            \textit {Para cualesquiera $a$ y $b$ existe un conjunto $C$ tal que $x \in C$ si y solo si $x = a$ o $x = b$.}
+        \end{block}
+
+\pause
+
+\vspace{1em}
+     ¿Todo conjunto es un elemento de algún otro conjunto?, ¿dos conjuntos cuales quiera son simultáneamente elementos
+     de algún mismo conjunto?
+\end{frame}
+
+\begin{frame}{Axiomas}
+    \begin{block}{Axioma 5: de Unión}
+        \textit {Para cualquier $S$, existe un conjunto $U$ tal que si $x \in U$ si y solo si $x \in X$ para algún $X \in S$.}
+    \end{block}
+
+\vspace{1em}
+
+    \begin{itemize}
+        \item Ejemplo 3. Sea $S=\{\emptyset, \{\emptyset\}\}$
+        \pause
+        ¿Quién es $\bigcup S$?
+        \pause
+        \vspace{1em}
+
+        Entonces $x \in \bigcup S$ si y solo si $x \in A$ para algún conjunto $A$ en $S$. Es decir, si y solo si $x \in \emptyset$
+        o $x \in \{\emptyset\}$
+        \item $\bigcup \emptyset = \emptyset$
+        \item Sean $A$ y $B$ conjuntos, existe $\bigcup \{A, B \}$ tal que $x \in \bigcup \{A, B \}$ si y solo si
+        $x \in A$ o $x \in B$. 
+    \end{itemize}
+
+\end{frame}
+
+\end{document}
