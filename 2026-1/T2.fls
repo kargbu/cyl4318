@@ -1,0 +1,6 @@
+PWD /Users/kgb/Desktop/cyl/2026-1
+INPUT /usr/local/texlive/2025/texmf.cnf
+INPUT /usr/local/texlive/2025/texmf-dist/web2c/texmf.cnf
+INPUT /usr/local/texlive/2025/texmf-var/web2c/xetex/xelatex.fmt
+INPUT /Users/kgb/Desktop/cyl/2026-1/T2.tex
+OUTPUT T2.log

@@ -1,0 +1,39 @@
+\documentclass[fc]{tarea}
+
+\usepackage[style=mexican]{csquotes}
+
+\newcommand{\al}{\symscr{A}}
+\newcommand{\lan}{\symscr{L}}
+\newcommand{\sis}{\symup{SF}}
+\newcommand{\expresiones}{\symup{Exp}}
+\NewDocumentCommand{\expr}{O{\al}}{\expresiones(#1)}
+
+%conjuntos
+\providecommand\st{}
+\newcommand\SetSymbol[1][]{%
+\nonscript\:#1\vert
+\allowbreak
+\nonscript\:
+\mathopen{}}
+\DeclarePairedDelimiterX\set[1]{\{}{\}}{%
+\renewcommand\st{\SetSymbol[\delimsize]}
+#1
+}
+
+\examen{Tarea 1}
+\prof{Karina G. Buendía y José Dosal}
+\materia{Conjuntos y lógica}
+\alum{}
+
+\begin{document}
+\HojaExamen{}{e}
+\chapter{}
+
+\begin{exercise}
+
+\end{exercise}
+\begin{solution}
+
+\end{solution}
+
+\end{document}
