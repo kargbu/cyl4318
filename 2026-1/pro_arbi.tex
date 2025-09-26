@@ -1,0 +1,42 @@
+\documentclass[fc]{tarea}
+
+\usepackage[style=mexican]{csquotes}
+
+\newcommand{\menos}{\backslash}
+\newcommand{\al}{\symscr{A}}
+\newcommand{\lan}{\symscr{L}}
+\newcommand{\sis}{\symup{SF}}
+\newcommand{\expresiones}{\symup{Exp}}
+\NewDocumentCommand{\expr}{O{\al}}{\expresiones(#1)}
+
+%conjuntos
+\providecommand\st{}
+\newcommand\SetSymbol[1][]{%
+\nonscript\:#1\vert
+\allowbreak
+\nonscript\:
+\mathopen{}}
+\DeclarePairedDelimiterX\set[1]{\{}{\}}{%
+\renewcommand\st{\SetSymbol[\delimsize]}#1}
+\DeclarePairedDelimiterX\bset[1]{\lbrack}{\rbrack}{#1}
+
+\examen{Ejemplos de productos arbitrarios}
+\prof{Karina G. Buendía y José Dosal}
+\materia{Conjuntos y lógica}
+\alum{}
+
+%\xsimsetup{solution/print = true}
+
+\begin{document}
+
+\begin{tasks}
+    \task Calcular el producto cartesiano $\prod_{i=1}^{3} A_i$ donde $A_1=\set{a, b}$,\;
+    $A_2=\set{x,y,z}$ y $A_3=\set{Pepe}$ es fácil. $\prod_{i=1}^{3} A_i = (a,x,Pepe),\;
+(a,y,Pepe),\;
+(a,z,Pepe),\;
+(b,x,Pepe),\;
+(b,y,Pepe),\;
+(b,z,Pepe)$ 
+\end{tasks}
+
+\end{document}

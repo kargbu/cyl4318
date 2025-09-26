@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{tarea}[2022/06/17 v0]
+\ProvidesClass{tarea}[2025/08/31 v1]
 
 \LoadClass[article]{memoir}
 
@@ -139,6 +139,10 @@
 \ifisfc
 %fuentes
 \newfontfamily{\arial}{Arial}
+\renewcommand\normalsize{%
+  \@setfontsize\normalsize{10.5pt}{15pt}%
+}
+\normalsize
 
 %tokens para llenar la información de la hoja de examen
 \newtoks\examen

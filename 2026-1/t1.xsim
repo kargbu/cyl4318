@@ -1,0 +1,42 @@
+\providecommand\numberofexercises{}
+\XSIM{solution-body}{exercise-1=={Por el axioma de comprensión tenemos que $P(x):= x \notin B$. Para cualquier conjunto $A$ hay un conjunto $B$, tal que si $x\in B \Leftrightarrow $ $x \in A$ y $P(x)$. Construimos el conjunto $C = \{x \in A| x\notin B\}$. Supongamos que existe un $C'=\{x \in A| x\notin B\}$. Por el axioma de extensión, debemos mostrar que $C \subseteq C'$ y $C' \subseteq C$. Sea $x \in C$ si y solo si $x \in A$ y $x\notin B$ pero esta propiedad es la que cumplen los elementos de $C'$. Por lo tanto $C = C'$.}||exercise-2=={La prueba es por contradicción. Supongamos que existe, para todo $a$ elemento $a \in X$ (lo contiene todo). Por el axioma de comprensión, tenemos un subconjunto de $X$, digamos $A = \{a | P(x)\}$ donde $P(x):= x\notin x$ Este conjunto es igual al de la paradoja de Russel. Cuando nos preguntamos si $A \in A$ nos lleva a una contradicción. Por lo que suponer que existe tal conjunto no puede suceder.}||exercise-3=={Para la implicación $A = \varnothing $, entonces $A\subseteq \{A\}$. Es trivial. Para la dirección contraria tenemos que demostrarlo por contradicción. Supongamos que $A\subseteq \{A\}$ y $A \neq \varnothing $.}}
+\XSIM{exercise-body}{exercise-1=={Demuestra que el conjunto de todos los $x$ tales que $x \in A$ y $x \notin B$ existe y que es único. \par }||exercise-2=={Demuestre que para cualquier conjunto $X$ hay algún $a\notin X$.}||exercise-3=={Demuestre que $A\subseteq \{A\}$ si y solo si $ A = \varnothing $.}||exercise-4=={Demuestre que si $A \subseteq B$, entonces $P(A) \subseteq P(B)$}||exercise-5=={Demuestre que $A \subseteq C$ si y solo si $A \cup (B \cap C) = (A \cup B) \cap C$}||exercise-6=={Si $E$ es un conjunto que contiene a $A \cup B$, entonces: \begin {tasks} \task $E \menos (E \menos A) = A$ \task $E \menos \varnothing = E, E \menos E= \varnothing $. \end {tasks}}||exercise-7=={Para todo conjunto $A$, $B$ y $C$ se cumple lo siguiente: \begin {tasks} \task $A \triangle \varnothing = A$ \task $A \triangle A = \varnothing $ \task Si $A \triangle B = A \triangle C$, entonces $B = C$ \end {tasks}}||exercise-8=={Sea $F$ una familia de conjuntos. Pruebe que $\bigcup F = \varnothing $ si y solo si $F = \varnothing $ o $A \in F$ implica $A = \varnothing $.}||exercise-9=={Demuestre que la unión y la intersección generalizada satisface la siguiente forma de asociación: \par \begin {tasks} \task $\bigcup \set { A_\alpha | \alpha \in \bigcup I} = \bigcup _{I \in I} (\bigcup _{\alpha \in I}A_\alpha )$ \task $\bigcap \set { A_\alpha | \alpha \in \bigcap I} = \bigcap _{I \in I} (\bigcap _{\alpha \in I}A_\alpha )$ \end {tasks}}||exercise-10=={Demuestra lo siguiente: \begin {tasks} \task $\bigcup _\alpha $ distribuye sobre $\cap $ y $\bigcup _\alpha $ distribuye sobre $\cup $, $$\bset {\bigcap _{\alpha \in I} A_\alpha } \cup \bset {\bigcap _{\beta \in J} B_\beta } = \bigcap \set {A_\alpha \cup B_\beta | (\alpha ,\beta ) \in I\times J}$$ \task Si el complemento es tomado respecto a $X$, entonces $$X\menos \bigcap \set {A_\alpha | \alpha \in I} = \bigcup \set {X\menos A_\alpha | \alpha \in I}$$ \task $\bigcup _\alpha $ y $\bigcap _\alpha $ distribuyen sobre el producto cartesiano $$\bset {\bigcap _{\alpha \in I} A_\alpha } \times \bset {\bigcap _{\beta \in J} B_\beta } = \bigcap \set {A_\alpha \times B_\beta | (\alpha , \beta )\in I \times J}$$ \end {tasks}}}
+\XSIM{goal}{exercise}{points}{0}
+\XSIM{totalgoal}{points}{0}
+\XSIM{goal}{exercise}{bonus-points}{0}
+\XSIM{totalgoal}{bonus-points}{0}
+\XSIM{order}{1||2||3||4||5||6||7||8||9||10}
+\XSIM{use}{}
+\XSIM{use!}{}
+\XSIM{used}{exercise-1=={true}||exercise-2=={true}||exercise-3=={true}||exercise-4=={true}||exercise-5=={true}||exercise-6=={true}||exercise-7=={true}||exercise-8=={true}||exercise-9=={true}||exercise-10=={true}}
+\XSIM{print}{}
+\XSIM{print!}{}
+\XSIM{printed}{exercise-1=={true}||exercise-2=={true}||exercise-3=={true}||exercise-4=={true}||exercise-5=={true}||exercise-6=={true}||exercise-7=={true}||exercise-8=={true}||exercise-9=={true}||exercise-10=={true}}
+\XSIM{total-number}{10}
+\XSIM{exercise}{10}
+\XSIM{types}{exercise}
+\XSIM{idtypes}{1=={exercise}||2=={exercise}||3=={exercise}||4=={exercise}||5=={exercise}||6=={exercise}||7=={exercise}||8=={exercise}||9=={exercise}||10=={exercise}}
+\XSIM{collections}{exercise-1=={all exercises}||exercise-2=={all exercises}||exercise-3=={all exercises}||exercise-4=={all exercises}||exercise-5=={all exercises}||exercise-6=={all exercises}||exercise-7=={all exercises}||exercise-8=={all exercises}||exercise-9=={all exercises}||exercise-10=={all exercises}}
+\XSIM{collection:all exercises}{exercise-1||exercise-2||exercise-3||exercise-4||exercise-5||exercise-6||exercise-7||exercise-8||exercise-9||exercise-10}
+\setcounter{totalexerciseinall exercises}{10}
+\XSIM{id}{exercise-1=={1}||exercise-2=={2}||exercise-3=={3}||exercise-4=={4}||exercise-5=={5}||exercise-6=={6}||exercise-7=={7}||exercise-8=={8}||exercise-9=={9}||exercise-10=={10}}
+\XSIM{ID}{exercise-1=={1}||exercise-2=={2}||exercise-3=={3}||exercise-4=={4}||exercise-5=={5}||exercise-6=={6}||exercise-7=={7}||exercise-8=={8}||exercise-9=={9}||exercise-10=={10}}
+\XSIM{counter}{exercise-1=={1}||exercise-2=={2}||exercise-3=={3}||exercise-4=={4}||exercise-5=={5}||exercise-6=={6}||exercise-7=={7}||exercise-8=={8}||exercise-9=={9}||exercise-10=={10}}
+\XSIM{counter-value}{exercise-1=={1}||exercise-2=={2}||exercise-3=={3}||exercise-4=={4}||exercise-5=={5}||exercise-6=={6}||exercise-7=={7}||exercise-8=={8}||exercise-9=={9}||exercise-10=={10}}
+\XSIM{solution}{}
+\XSIM{chapter-value}{exercise-1=={0}||exercise-2=={0}||exercise-3=={0}||exercise-4=={0}||exercise-5=={0}||exercise-6=={0}||exercise-7=={0}||exercise-8=={0}||exercise-9=={0}||exercise-10=={0}}
+\XSIM{chapter}{exercise-1=={0}||exercise-2=={0}||exercise-3=={0}||exercise-4=={0}||exercise-5=={0}||exercise-6=={0}||exercise-7=={0}||exercise-8=={0}||exercise-9=={0}||exercise-10=={0}}
+\XSIM{section-value}{exercise-1=={0}||exercise-2=={0}||exercise-3=={0}||exercise-4=={0}||exercise-5=={0}||exercise-6=={0}||exercise-7=={0}||exercise-8=={0}||exercise-9=={0}||exercise-10=={0}}
+\XSIM{section}{exercise-1=={0.0}||exercise-2=={0.0}||exercise-3=={0.0}||exercise-4=={0.0}||exercise-5=={0.0}||exercise-6=={0.0}||exercise-7=={0.0}||exercise-8=={0.0}||exercise-9=={0.0}||exercise-10=={0.0}}
+\XSIM{sectioning}{exercise-1=={{0}{0}{0}{0}{0}}||exercise-2=={{0}{0}{0}{0}{0}}||exercise-3=={{0}{0}{0}{0}{0}}||exercise-4=={{0}{0}{0}{0}{0}}||exercise-5=={{0}{0}{0}{0}{0}}||exercise-6=={{0}{0}{0}{0}{0}}||exercise-7=={{0}{0}{0}{0}{0}}||exercise-8=={{0}{0}{0}{0}{0}}||exercise-9=={{0}{0}{0}{0}{0}}||exercise-10=={{0}{0}{0}{0}{0}}}
+\XSIM{subtitle}{}
+\XSIM{points}{}
+\XSIM{bonus-points}{}
+\XSIM{page-value}{exercise-1=={1}||exercise-2=={1}||exercise-3=={1}||exercise-4=={1}||exercise-5=={1}||exercise-6=={1}||exercise-7=={1}||exercise-8=={1}||exercise-9=={1}||exercise-10=={1}}
+\XSIM{page}{exercise-1=={1}||exercise-2=={1}||exercise-3=={1}||exercise-4=={1}||exercise-5=={1}||exercise-6=={1}||exercise-7=={1}||exercise-8=={1}||exercise-9=={1}||exercise-10=={1}}
+\XSIM{tags}{}
+\XSIM{topics}{}
+\XSIM{userpoints}{}
+\XSIM{bodypoints}{}
+\XSIM{userbonus-points}{}
+\XSIM{bodybonus-points}{}

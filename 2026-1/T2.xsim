@@ -32,8 +32,8 @@
 \XSIM{subtitle}{}
 \XSIM{points}{}
 \XSIM{bonus-points}{}
-\XSIM{page-value}{exercise-1=={1}||exercise-2=={1}||exercise-3=={1}||exercise-4=={1}||exercise-5=={1}||exercise-6=={1}||exercise-7=={1}||exercise-8=={1}||exercise-9=={1}||exercise-10=={2}}
-\XSIM{page}{exercise-1=={1}||exercise-2=={1}||exercise-3=={1}||exercise-4=={1}||exercise-5=={1}||exercise-6=={1}||exercise-7=={1}||exercise-8=={1}||exercise-9=={1}||exercise-10=={2}}
+\XSIM{page-value}{exercise-1=={1}||exercise-2=={1}||exercise-3=={1}||exercise-4=={1}||exercise-5=={1}||exercise-6=={1}||exercise-7=={1}||exercise-8=={2}||exercise-9=={2}||exercise-10=={2}}
+\XSIM{page}{exercise-1=={1}||exercise-2=={1}||exercise-3=={1}||exercise-4=={1}||exercise-5=={1}||exercise-6=={1}||exercise-7=={1}||exercise-8=={2}||exercise-9=={2}||exercise-10=={2}}
 \XSIM{tags}{}
 \XSIM{topics}{}
 \XSIM{userpoints}{}

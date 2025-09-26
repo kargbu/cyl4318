@@ -2,6 +2,7 @@
 
 \usepackage[style=mexican]{csquotes}
 
+\newcommand{\menos}{\backslash}
 \newcommand{\al}{\symscr{A}}
 \newcommand{\lan}{\symscr{L}}
 \newcommand{\sis}{\symup{SF}}
@@ -16,24 +17,101 @@
 \nonscript\:
 \mathopen{}}
 \DeclarePairedDelimiterX\set[1]{\{}{\}}{%
-\renewcommand\st{\SetSymbol[\delimsize]}
-#1
-}
+\renewcommand\st{\SetSymbol[\delimsize]}#1}
+\DeclarePairedDelimiterX\bset[1]{\lbrack}{\rbrack}{#1}
 
 \examen{Tarea 1}
 \prof{Karina G. Buendía y José Dosal}
 \materia{Conjuntos y lógica}
 \alum{}
 
+%\xsimsetup{solution/print = true}
+
+
 \begin{document}
 \HojaExamen{}{e}
-\chapter{}
-
 \begin{exercise}
+    Demuestra que el conjunto de todos los $x$ tales que $x \in A$ y $x \notin B$ existe y que es único.
 
 \end{exercise}
-\begin{solution}
 
+\begin{solution}
+Por el axioma de comprensión tenemos que $P(x):= x \notin B$. Para cualquier conjunto $A$ hay un conjunto $B$,
+tal que si $x\in B \Leftrightarrow$ $x \in A$ y $P(x)$. Construimos el conjunto $C = \{x \in A| x\notin B\}$.
+Supongamos que existe un $C'=\{x \in A| x\notin B\}$. Por el axioma de extensión, debemos mostrar que 
+$C \subseteq C'$ y $C' \subseteq C$. Sea $x \in C$ si y solo si $x \in A$ y $x\notin B$
+pero esta propiedad es la que cumplen los elementos de $C'$. Por lo tanto $C = C'$.
 \end{solution}
+
+\begin{exercise}
+    Demuestre que para cualquier conjunto $X$ hay algún $a\notin X$.
+\end{exercise}
+
+\begin{solution}
+La prueba es por contradicción. Supongamos que existe, para todo $a$ elemento $a \in X$ (lo contiene todo).
+Por el axioma de comprensión, tenemos un subconjunto de $X$, digamos $A = \{a | P(x)\}$ donde $P(x):= x\notin x$
+Este conjunto es igual al de la paradoja de Russel. Cuando nos preguntamos si $A \in A$ nos lleva a una contradicción.
+Por lo que suponer que existe tal conjunto no puede suceder.
+\end{solution}
+
+\begin{exercise}
+    Demuestre que $A\subseteq \{A\}$ si y solo si $ A = \varnothing$.
+\end{exercise}
+
+\begin{solution}
+   Para la implicación $A = \varnothing$, entonces $A\subseteq \{A\}$. Es trivial. Para la dirección contraria
+   tenemos que demostrarlo por contradicción. Supongamos que $A\subseteq \{A\}$ y $A \neq \varnothing$.
+\end{solution}
+
+\begin{exercise}
+    Demuestre que si $A \subseteq B$, entonces $P(A) \subseteq P(B)$
+\end{exercise}
+
+\begin{exercise}
+  Demuestre que $A \subseteq C$ si y solo si $A \cup (B \cap C) = (A \cup B) \cap C$  
+\end{exercise}
+
+\begin{exercise}
+    Si $E$ es un conjunto que contiene a $A \cup B$, entonces:
+    \begin{tasks}
+    \task $E \menos (E \menos A) = A$
+    \task $E \menos \varnothing = E, E \menos E= \varnothing$.
+    \end{tasks}
+\end{exercise}
+
+\begin{exercise}
+    Para todo conjunto $A$, $B$ y $C$ se cumple lo siguiente:
+    \begin{tasks}
+    \task $A \triangle \varnothing = A$
+    \task $A \triangle A = \varnothing$
+    \task Si $A \triangle B = A \triangle C$, entonces $B = C$
+    \end{tasks}
+\end{exercise}
+
+\begin{exercise}
+    Sea $F$ una familia de conjuntos. Pruebe que $\bigcup F = \varnothing$ si y solo si $F = \varnothing$
+    o $A \in F$ implica $A = \varnothing$.
+\end{exercise}
+
+\begin{exercise}
+    Demuestre que la unión y la intersección generalizada satisface la siguiente forma de asociación:
+    
+     \begin{tasks}
+     \task $\bigcup \set{ A_\alpha | \alpha \in \bigcup I} = \bigcup_{I \in I} (\bigcup_{\alpha \in I}A_\alpha)$
+     \task $\bigcap \set{ A_\alpha | \alpha \in \bigcap I} = \bigcap_{I \in I} (\bigcap_{\alpha \in I}A_\alpha)$
+     \end{tasks}
+\end{exercise}
+
+\begin{exercise}
+    Demuestra lo siguiente:
+    \begin{tasks}
+        \task $\bigcup_\alpha$ distribuye sobre $\cap$ y $\bigcup_\alpha$ distribuye sobre $\cup$,
+        $$\bset{\bigcap_{\alpha \in I} A_\alpha} \cup \bset{\bigcap_{\beta \in J} B_\beta} = \bigcap \set{A_\alpha \cup B_\beta | (\alpha,\beta) \in I\times J}$$
+        \task Si el complemento es tomado respecto a $X$, entonces
+        $$X\menos \bigcap \set{A_\alpha | \alpha \in I} = \bigcup \set{X\menos A_\alpha | \alpha \in I}$$
+        \task $\bigcup_\alpha$ y $\bigcap_\alpha$ distribuyen sobre el producto cartesiano
+        $$\bset{\bigcap_{\alpha \in I} A_\alpha} \times \bset{\bigcap_{\beta \in J} B_\beta} = \bigcap \set{A_\alpha \times B_\beta | (\alpha, \beta)\in I \times J}$$
+    \end{tasks}
+\end{exercise}
 
 \end{document}
