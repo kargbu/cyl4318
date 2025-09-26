@@ -1,3 +1,0 @@
-# Conjuntos y Lógica
-
-Bienvenidos al curso de Conjuntos y Lógica ...
