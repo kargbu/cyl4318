@@ -31,12 +31,25 @@
 
 \begin{tasks}
     \task Calcular el producto cartesiano $\prod_{i=1}^{3} A_i$ donde $A_1=\set{a, b}$,\;
-    $A_2=\set{x,y,z}$ y $A_3=\set{Pepe}$ es fácil. $\prod_{i=1}^{3} A_i = (a,x,Pepe),\;
+    $A_2=\set{x,y,z}$ y $A_3=\set{Pepe}$ es fácil. $\prod_{i=1}^{3} A_i = \set{(a,x,Pepe),\;
 (a,y,Pepe),\;
 (a,z,Pepe),\;
 (b,x,Pepe),\;
 (b,y,Pepe),\;
-(b,z,Pepe)$ 
+(b,z,Pepe)}$. Pero cada uno de estos elementos del producto es una función, dicho de otro modo,
+el producto calcula todas las funciones cuyo dominio es el conjunto $I$ de índices y codominio
+la unión de los $A_i$'s, por ejemplo,
+la tupla $(a, x, Pepe)$ representa a la función $f_1$ tal que $f_ 1 (1)=a$, $f_1 (2)=x$ y 
+$f_1 (3)=Pepe$.
+El producto cartesiano es el conjunto que contiene exactamente estas seis funciones, que 
+podemos describir formalmente como conjuntos de pares ordenados:\\
+$f_1=\set{(1,a),(2,x),(3,Pepe)}\\
+f_2=\set{(1,a),(2,y),(3,Pepe)}\\
+f_3=\set{(1,a),(2,z),(3,Pepe)}\\
+f_4=\set{(1,b),(2,x),(3,Pepe)}\\
+f_5=\set{(1,b),(2,y),(3,Pepe)}\\
+f_6=\set{(1,b),(2,z),(3,Pepe)}$
+
 \end{tasks}
 
 \end{document}

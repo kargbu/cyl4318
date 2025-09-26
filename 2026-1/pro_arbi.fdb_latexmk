@@ -1,11 +1,11 @@
 # Fdb version 4
-["xdvipdfmx"] 1758847057.58862 "pro_arbi.xdv" "pro_arbi.pdf" "pro_arbi" 1758847057.85193 0
-  "pro_arbi.xdv" 1758847057.52969 3840 eb492d88dc24b254ef72586ac804d249 "xelatex"
+["xdvipdfmx"] 1758848346.27343 "pro_arbi.xdv" "pro_arbi.pdf" "pro_arbi" 1758848346.52299 0
+  "pro_arbi.xdv" 1758848346.21343 11436 d12a9ca682b32376c3b1fe5fbc5f5f98 "xelatex"
   (generated)
   "pro_arbi.pdf"
   (rewritten before read)
-["xelatex"] 1758847056.62012 "/Users/kgb/Desktop/cyl/2026-1/pro_arbi.tex" "pro_arbi.xdv" "pro_arbi" 1758847057.85066 0
-  "/Users/kgb/Desktop/cyl/2026-1/pro_arbi.tex" 1758847056.42688 1005 abb33dc32fb3e044437f0774dd9e76cc ""
+["xelatex"] 1758848345.30459 "/Users/kgb/Desktop/cyl/2026-1/pro_arbi.tex" "pro_arbi.xdv" "pro_arbi" 1758848346.52167 0
+  "/Users/kgb/Desktop/cyl/2026-1/pro_arbi.tex" 1758848267.81821 1693 986a12e6e17d899b6a6946a8bffecf4e ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm" 1136768653 1528 abec98dbc43e172678c11b3b9031252a ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi5.tfm" 1136768653 1508 3b32edd0d68f6498a5a375e78f9edc5e ""
@@ -147,10 +147,10 @@
   "/usr/local/texlive/2025/texmf-dist/web2c/texmf.cnf" 1739380943 42148 61becc7c670cd061bb319c643c27fdd4 ""
   "/usr/local/texlive/2025/texmf-var/web2c/xetex/xelatex.fmt" 1741450550 5639796 b6822fbf027c6598cec2e241e0925725 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "pro_arbi.aux" 1758847057.52813 306 deac99d7be6e2e38165b47cad701444b "xelatex"
-  "pro_arbi.tex" 1758847056.42688 1005 abb33dc32fb3e044437f0774dd9e76cc ""
-  "pro_arbi.xsim" 1758847057.52672 896 27b187a9a6a9f448c733b8e217f7747e "xelatex"
-  "tarea.cls" 1756682614.27681 7407 a6d91aa9415031a22e5d281a42559552 ""
+  "pro_arbi.aux" 1758848346.21158 306 deac99d7be6e2e38165b47cad701444b "xelatex"
+  "pro_arbi.tex" 1758848267.81821 1693 986a12e6e17d899b6a6946a8bffecf4e ""
+  "pro_arbi.xsim" 1758848346.21007 896 27b187a9a6a9f448c733b8e217f7747e "xelatex"
+  "tarea.cls" 1758848345.10982 7407 a6d91aa9415031a22e5d281a42559552 ""
   (generated)
   "pro_arbi.aux"
   "pro_arbi.log"
