@@ -9,7 +9,6 @@
 \newcommand{\expresiones}{\symup{Exp}}
 \NewDocumentCommand{\expr}{O{\al}}{\expresiones(#1)}
 
-%conjuntos
 \providecommand\st{}
 \newcommand\SetSymbol[1][]{%
 \nonscript\:#1\vert
@@ -20,36 +19,60 @@
 \renewcommand\st{\SetSymbol[\delimsize]}#1}
 \DeclarePairedDelimiterX\bset[1]{\lbrack}{\rbrack}{#1}
 
+
 \examen{Ejemplos de productos arbitrarios}
 \prof{Karina G. Buendía y José Dosal}
 \materia{Conjuntos y lógica}
 \alum{}
 
-%\xsimsetup{solution/print = true}
-
 \begin{document}
-
+\HojaExamen{}{e}
 \begin{tasks}
-    \task Calcular el producto cartesiano $\prod_{i=1}^{3} A_i$ donde $A_1=\set{a, b}$,\;
-    $A_2=\set{x,y,z}$ y $A_3=\set{Pepe}$ es fácil. $\prod_{i=1}^{3} A_i = \set{(a,x,Pepe),\;
-(a,y,Pepe),\;
-(a,z,Pepe),\;
-(b,x,Pepe),\;
-(b,y,Pepe),\;
-(b,z,Pepe)}$. Pero cada uno de estos elementos del producto es una función, dicho de otro modo,
-el producto calcula todas las funciones cuyo dominio es el conjunto $I$ de índices y codominio
-la unión de los $A_i$'s, por ejemplo,
-la tupla $(a, x, Pepe)$ representa a la función $f_1$ tal que $f_ 1 (1)=a$, $f_1 (2)=x$ y 
-$f_1 (3)=Pepe$.
-El producto cartesiano es el conjunto que contiene exactamente estas seis funciones, que 
-podemos describir formalmente como conjuntos de pares ordenados:\\
-$f_1=\set{(1,a),(2,x),(3,Pepe)}\\
-f_2=\set{(1,a),(2,y),(3,Pepe)}\\
-f_3=\set{(1,a),(2,z),(3,Pepe)}\\
-f_4=\set{(1,b),(2,x),(3,Pepe)}\\
-f_5=\set{(1,b),(2,y),(3,Pepe)}\\
-f_6=\set{(1,b),(2,z),(3,Pepe)}$
+
+\task El producto cartesiano de la familia de conjuntos $\al = \set{A_i}_{i \in \set{1,2,3}}$
+    se denota como $\prod_{i=1}^{3} A_i$ donde $A_1=\set{a, b}$,\;
+    $A_2=\set{x,y,z}$ y $A_3=\set{Pepe}$.
+    
+    Es fácil ver que el producto es el conjunto:
+    \[ \prod_{i=1}^{3} A_i = 
+    \set{ \begin{aligned}
+        &(a,x,\text{Pepe}),\; (a,y,\text{Pepe}),\; (a,z,\text{Pepe}), \\
+        &(b,x,\text{Pepe}),\; (b,y,\text{Pepe}),\; (b,z,\text{Pepe})
+    \end{aligned} }
+    \]
+    
+    Pero cada uno de estos elementos es una función. Dicho de otro modo, el producto calcula todas las funciones cuyo dominio es el conjunto de índices $I$ y cuyo codominio es la unión de los $A_i$. Por ejemplo, la tupla $(a, x, \text{Pepe})$ representa a la función $f_1$ tal que $f_1(1)=a$, $f_1(2)=x$ y $f_1(3)=\text{Pepe}$.
+    
+    El producto cartesiano es el conjunto que contiene exactamente estas seis funciones, que podemos describir formalmente como conjuntos de pares ordenados:
+    \begin{gather*}
+        f_1=\set{(1,a),(2,x),(3,\text{Pepe})}\\
+        f_2=\set{(1,a),(2,y),(3,\text{Pepe})}\\
+        f_3=\set{(1,a),(2,z),(3,\text{Pepe})}\\
+        f_4=\set{(1,b),(2,x),(3,\text{Pepe})}\\
+        f_5=\set{(1,b),(2,y),(3,\text{Pepe})}\\
+        f_6=\set{(1,b),(2,z),(3,\text{Pepe})}
+    \end{gather*}
+
+\task Sea la familia de conjuntos $\mathcal{F} = \set{\set{1,2}, \set{a,b,c}, \set{\text{Pepe}}}$.
+    Si la función de indexación es la identidad $I: \mathcal{F} \to \mathcal{F}$ donde $I(A)=A$,
+    tenemos que nuestro dominio es la propia familia $\mathcal{F}$ y el codominio es la $\bigcup_{A \in \mathcal{F}}A$.
+    
+    Así, los elementos del producto $\prod_{A \in \mathcal{F}} A$ son funciones $g$ que deben cumplir lo siguiente:
+    \begin{itemize}
+        \item $g(\set{1,2})$ debe ser $1$ o $2$.
+        \item $g(\set{a,b,c})$ debe ser $a$, $b$ o $c$.
+        \item $g(\set{\text{Pepe}})$ debe ser $\text{Pepe}$.
+    \end{itemize}
+    
+    El producto cartesiano es, por tanto, el siguiente conjunto de $2 \times 3 \times 1 = 6$ funciones:
+    \begin{gather*}
+        g_1 = \set{(\set{1,2}, 1), (\set{a,b,c}, a), (\set{\text{Pepe}}, \text{Pepe})}\\
+        g_2 = \set{(\set{1,2}, 1), (\set{a,b,c}, b), (\set{\text{Pepe}}, \text{Pepe})}\\
+        g_3 = \set{(\set{1,2}, 1), (\set{a,b,c}, c), (\set{\text{Pepe}}, \text{Pepe})}\\
+        g_4 = \set{(\set{1,2}, 2), (\set{a,b,c}, a), (\set{\text{Pepe}}, \text{Pepe})}\\
+        g_5 = \set{(\set{1,2}, 2), (\set{a,b,c}, b), (\set{\text{Pepe}}, \text{Pepe})}\\
+        g_6 = \set{(\set{1,2}, 2), (\set{a,b,c}, c), (\set{\text{Pepe}}, \text{Pepe})}
+    \end{gather*}
 
 \end{tasks}
-
 \end{document}
