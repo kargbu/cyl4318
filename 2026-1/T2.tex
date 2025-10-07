@@ -20,7 +20,7 @@
 \renewcommand\st{\SetSymbol[\delimsize]}#1}
 \DeclarePairedDelimiterX\bset[1]{\lbrack}{\rbrack}{#1}
 
-\examen{Tarea 2 (parte I)}
+\examen{Tarea 2 (parte I y II)}
 \prof{Karina G. Buendía y José Dosal}
 \materia{Conjuntos y lógica}
 \alum{}
@@ -100,6 +100,46 @@ Construyamos una función $h: B \to C$ tal que $f = h \circ g$. Sea $h$ definida
          $$\prod_{\alpha \in I} A_{\alpha} \subseteq \prod_{\alpha \in I} B_{\alpha}$$.
       \item El recíproco de (a) se cumple si $\prod_{\alpha \in I} A_{\alpha} \neq \emptyset$
    \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+   Sea la relación $E$ en $\mathcal{R}^2$ definida por $E = \set{((x_1,y_1),(x_2,y_2)) |\; y_1 - x_1^2 = y_2 - x_2^2 }$. Demuestre que $E$ es de equivalencia y describa las clases de equivalencia.
+\end{exercise}
+
+\begin{exercise}
+   Sea $R$ una relaci\'{o}n reflexiva y transitiva. Defina $\approx$ en $A$ por $a \approx b$ si y s\'{o}lo si $(a,b)\in R $ y $(b,a)\in R$.
+
+\begin{enumerate}
+    \item[(a)] Muestre que $\approx$ es una relaci\'{o}n de equivalencia en $A$.
+    
+    \item[(b)] Si $\preceq$ se define por $[a] \preceq [b]$ si y s\'{o}lo si $(a,b)\in R$; muestre que $(A/\approx, \preceq)$ es un conjunto ordenado.
+\end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+   Sea $R$ un orden en $A$. Pruebe que $R^{-1}$ es tambi\'{e}n un orden en $A$ (denominado dual de $R$) y para $B \subseteq A$ se cumple que
+
+\begin{enumerate}
+    \item[(a)] $a$ es el m\'{i}nimo elemento de $B$ en $R^{-1}$ si y s\'{o}lo si $a$ es el m\'{a}ximo elemento de $B$ en $R$.
+    
+    \item[(b)] Similarmente para minimal y maximal, y supremo e \'{i}nfimo.
+\end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+   Muestre que $h$ es un isomorfismo entre $(A, \leq)$ y $(B, \preceq)$ si y s\'{o}lo si $h$ y $h^{-1}$ preservan el orden.
+\end{exercise}
+
+\begin{exercise}
+ Sea $A$ ordenado por $\leq$, y $B \subseteq A$. Demuestra lo siguiente:
+
+\begin{enumerate}[(a)]
+    \item $B$ tiene a lo m\'{a}s un elemento m\'{i}nimo.
+
+    \item El elemento m\'{i}nimo de $B$ (si existe) es tambi\'{e}n minimal.
+
+    \item Si $B$ es una cadena, entonces todo elemento minimal de $B$ es tambi\'{e}n un m\'{i}nimo.
+\end{enumerate}
 \end{exercise}
 
 \end{document}

@@ -1,0 +1,42 @@
+\providecommand\numberofexercises{}
+\XSIM{solution-body}{}
+\XSIM{exercise-body}{exercise-1=={(Tema 4) Demuestra lo siguiente: \begin {tasks} \task $\bigcup _\alpha $ distribuye sobre $\cap $ y $\bigcup _\alpha $ distribuye sobre $\cup $, $$\bset {\bigcap _{\alpha \in I} A_\alpha } \cup \bset {\bigcap _{\beta \in J} B_\beta } = \bigcap \set {A_\alpha \cup B_\beta | (\alpha ,\beta ) \in I\times J}$$ \task Si el complemento es tomado respecto a $X$, entonces $$X\menos \bigcap \set {A_\alpha | \alpha \in I} = \bigcup \set {X\menos A_\alpha | \alpha \in I}$$ \task $\bigcup _\alpha $ y $\bigcap _\alpha $ distribuyen sobre el producto cartesiano $$\bset {\bigcap _{\alpha \in I} A_\alpha } \times \bset {\bigcap _{\beta \in J} B_\beta } = \bigcap \set {A_\alpha \times B_\beta | (\alpha , \beta )\in I \times J}$$ \end {tasks}}||exercise-2=={(Tema 5) Demuestra que toda relación de equivalencia $E$ sobre un conjunto $A$ determina una partición del conjunto. Construye una biyección entre el conjunto de todas las relaciones de equivalencia sobre $A$ y el conjunto de todas las particiones de este.}||exercise-3=={(Tema 6) Demuestra que el único isomorfismo de un conjunto bien ordenado en sí mismos es la identidad.}}
+\XSIM{goal}{exercise}{points}{0}
+\XSIM{totalgoal}{points}{0}
+\XSIM{goal}{exercise}{bonus-points}{0}
+\XSIM{totalgoal}{bonus-points}{0}
+\XSIM{order}{1||2||3}
+\XSIM{use}{}
+\XSIM{use!}{}
+\XSIM{used}{exercise-1=={true}||exercise-2=={true}||exercise-3=={true}}
+\XSIM{print}{}
+\XSIM{print!}{}
+\XSIM{printed}{exercise-1=={true}||exercise-2=={true}||exercise-3=={true}}
+\XSIM{total-number}{3}
+\XSIM{exercise}{3}
+\XSIM{types}{exercise}
+\XSIM{idtypes}{1=={exercise}||2=={exercise}||3=={exercise}}
+\XSIM{collections}{exercise-1=={all exercises}||exercise-2=={all exercises}||exercise-3=={all exercises}}
+\XSIM{collection:all exercises}{exercise-1||exercise-2||exercise-3}
+\setcounter{totalexerciseinall exercises}{3}
+\XSIM{id}{exercise-1=={1}||exercise-2=={2}||exercise-3=={3}}
+\XSIM{ID}{exercise-1=={1}||exercise-2=={2}||exercise-3=={3}}
+\XSIM{counter}{exercise-1=={1}||exercise-2=={2}||exercise-3=={3}}
+\XSIM{counter-value}{exercise-1=={1}||exercise-2=={2}||exercise-3=={3}}
+\XSIM{solution}{}
+\XSIM{chapter-value}{exercise-1=={0}||exercise-2=={0}||exercise-3=={0}}
+\XSIM{chapter}{exercise-1=={0}||exercise-2=={0}||exercise-3=={0}}
+\XSIM{section-value}{exercise-1=={0}||exercise-2=={0}||exercise-3=={0}}
+\XSIM{section}{exercise-1=={0.0}||exercise-2=={0.0}||exercise-3=={0.0}}
+\XSIM{sectioning}{exercise-1=={{0}{0}{0}{0}{0}}||exercise-2=={{0}{0}{0}{0}{0}}||exercise-3=={{0}{0}{0}{0}{0}}}
+\XSIM{subtitle}{}
+\XSIM{points}{}
+\XSIM{bonus-points}{}
+\XSIM{page-value}{exercise-1=={1}||exercise-2=={1}||exercise-3=={1}}
+\XSIM{page}{exercise-1=={1}||exercise-2=={1}||exercise-3=={1}}
+\XSIM{tags}{}
+\XSIM{topics}{}
+\XSIM{userpoints}{}
+\XSIM{bodypoints}{}
+\XSIM{userbonus-points}{}
+\XSIM{bodybonus-points}{}

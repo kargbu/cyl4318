@@ -1,0 +1,107 @@
+\documentclass[fc]{tarea}
+
+\usepackage[style=mexican]{csquotes}
+
+\newcommand{\menos}{\backslash}
+\newcommand{\al}{\symscr{A}}
+\newcommand{\lan}{\symscr{L}}
+\newcommand{\sis}{\symup{SF}}
+\newcommand{\expresiones}{\symup{Exp}}
+\NewDocumentCommand{\expr}{O{\al}}{\expresiones(#1)}
+
+%conjuntos
+\providecommand\st{}
+\newcommand\SetSymbol[1][]{%
+\nonscript\:#1\vert
+\allowbreak
+\nonscript\:
+\mathopen{}}
+\DeclarePairedDelimiterX\set[1]{\{}{\}}{%
+\renewcommand\st{\SetSymbol[\delimsize]}#1}
+\DeclarePairedDelimiterX\bset[1]{\lbrack}{\rbrack}{#1}
+
+\examen{Tarea 2 (parte I)}
+\prof{Karina G. Buendía y José Dosal}
+\materia{Conjuntos y lógica}
+\alum{}
+
+%\xsimsetup{solution/print = true}
+
+
+\begin{document}
+\HojaExamen{}{e}
+\iffalse
+\section*{1. Conjuntos}
+
+\begin{enumerate}
+    \item[1.1] Noci\'{o}n de conjunto. Noci\'{o}n de pertenencia a un conjunto. Notaci\'{o}n.
+
+    \item[1.2] Relaciones entre conjuntos: $\cup$, $\cap$, $\setminus$, $\subset$. Uni\'{o}n e intersecci\'{o}n generalizadas.
+
+    \item[1.3] Diagramas de Venn y diagramas de Euler. Representaci\'{o}n de operaciones.
+
+    \item[1.4] Relaciones: pares ordenados y productos cartesianos, dominio y codominio, imagen o rango de una relaci\'{o}n. Operaciones con relaciones: inversa de una relaci\'{o}n, composici\'{o}n de relaciones. Relaciones de orden sobre un conjunto: Conjunto Parcialmente Ordenado (COPO), Conjunto Totalmente Ordenado (COTO), Conjunto Bien Ordenado (COBO), Conjunto Densamente Ordenado (CODO), Cotas (m\'{a}ximo, m\'{ı}nimo, maximales, \dots). ¿Qu\'{e} afirma el Lema de Zorn?
+
+    \item[1.5] Relaciones de equivalencia y particiones. El conjunto cociente m\'{o}dulo una relaci\'{o}n de equivalencia.
+
+    \item[1.6] Funciones. Dominio y Codominio, Rango o Imagen. Igualdad de funciones, funci\'{o}n constante, gr\'{a}fica de una funci\'{o}n. Funciones inyectivas, suprayectivas y biyectivas. Inversa de una funci\'{o}n, funciones invertibles, composici\'{o}n de funciones.
+
+    \item[1.7] Cardinalidad. Equipotencia de dos conjuntos. Teorema de Cantor, conjuntos finitos y conjuntos infinitos. Conjuntos numerables y no numerables ($\mathbb{N}$, $\mathbb{Z}$, $\mathbb{Q}$, $\mathbb{R}$).
+
+    \item[1.8] Inducci\'{o}n y Recursi\'{o}n. Inducci\'{o}n finita y segundo principio de Inducci\'{o}n. Principio del no descenso infinito. Principio del Buen Orden.
+\end{enumerate}
+\fi
+
+\section*{Conjuntos}
+
+\begin{exercise}(Tema 4)
+    Demuestra lo siguiente:
+    \begin{tasks}
+        \task $\bigcup_\alpha$ distribuye sobre $\cap$ y $\bigcup_\alpha$ distribuye sobre $\cup$,
+        $$\bset{\bigcap_{\alpha \in I} A_\alpha} \cup \bset{\bigcap_{\beta \in J} B_\beta} = \bigcap \set{A_\alpha \cup B_\beta | (\alpha,\beta) \in I\times J}$$
+        \task Si el complemento es tomado respecto a $X$, entonces
+        $$X\menos \bigcap \set{A_\alpha | \alpha \in I} = \bigcup \set{X\menos A_\alpha | \alpha \in I}$$
+        \task $\bigcup_\alpha$ y $\bigcap_\alpha$ distribuyen sobre el producto cartesiano
+        $$\bset{\bigcap_{\alpha \in I} A_\alpha} \times \bset{\bigcap_{\beta \in J} B_\beta} = \bigcap \set{A_\alpha \times B_\beta | (\alpha, \beta)\in I \times J}$$
+    \end{tasks}
+\end{exercise}
+
+\begin{exercise}(Tema 5)
+Demuestra que toda relación de equivalencia $E$ sobre un conjunto $A$ determina una partición del conjunto. Construye una biyección entre el conjunto de todas las relaciones de equivalencia sobre $A$ y el conjunto de todas las particiones de este.
+\end{exercise}
+
+\begin{exercise}(Tema 6)
+    Demuestra que el único isomorfismo de un conjunto bien ordenado en sí mismos es la identidad.
+\end{exercise}
+
+\section*{Lógica}
+\iffalse
+\begin{enumerate}
+    \item[2.1] Forma l\'{o}gica de un enunciado.
+
+    \item[2.2] Simbolizaci\'{o}n de enunciados simples. Letras proposicionales y conectivos l\'{o}gicos. Sinonimia de conectivos:
+    \begin{enumerate}
+        \item A implica B; si A entonces B; B, si A; A s\'{o}lo si B; A es suficiente para B; B es necesaria para A.
+        \item A o B; A a menos que B; A o B o ambos.
+        \item A y B; A pero B; ambos: A y B.
+        \item no A; no es el caso que A; A, no.
+    \end{enumerate}
+
+    \item[2.3] Simbolizaci\'{o}n de argumentos simples.
+
+    \item[2.4] Simbolizaci\'{o}n de enunciados tomando en consideraci\'{o}n la estructura sujeto-predicado: predicados, constantes, variables y cuantificaciones:
+    \begin{enumerate}
+        \item Existe \dots / hay un \dots / para alg\'{u}n \dots / hay al menos un \dots /
+        \item Para todos \dots / para cada uno \dots / para cualquiera \dots /.
+    \end{enumerate}
+    Ejemplos y m\'{a}s ejemplos de traducciones de enunciados (de contenido matem\'{a}tico y de contenido no matem\'{a}tico).
+
+    \item[2.5] Criterios de verdad: criterios de verdad de conectivos, cuantificadores e igualdad y analizar a partir de ellos la verdad de cualquier enunciado m\'{a}s complejo.
+
+    \item[2.6] Equivalencias l\'{o}gicas elementales. Negaci\'{o}n de una conjunci\'{o}n, de una disyunci\'{o}n, de una implicaci\'{o}n, de un bicondicional. Negaci\'{o}n de cuantificadores universales y existenciales. Rec\'{i}proca y contrapuesta de una implicaci\'{o}n. Leyes distributivas. Optativo: uso de reglas de instanciaci\'{o}n y generalizaci\'{o}n, universal y existencial.
+\end{enumerate}
+\fi
+
+
+
+\end{document}
