@@ -271,6 +271,8 @@ INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi5.tfm
 INPUT ./unam.jpg
 INPUT ./unam.jpg
 OUTPUT t1.xdv
+INPUT ./unam.jpg
+INPUT ./unam.jpg
 INPUT ./t1.xsim
 INPUT ./unam.jpg
 INPUT ./unam.jpg

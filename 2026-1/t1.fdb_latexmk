@@ -1,11 +1,11 @@
 # Fdb version 4
-["xdvipdfmx"] 1756840118.5262 "t1.xdv" "t1.pdf" "t1" 1756840118.78518 0
-  "t1.xdv" 1756840118.46523 19292 a5b46b3de971a138ee3ed316b0ae46aa "xelatex"
+["xdvipdfmx"] 1760897982.70344 "t1.xdv" "t1.pdf" "t1" 1760897982.97068 0
+  "t1.xdv" 1760897982.64345 46660 dad1607ccc832810ea43e9d04761d145 "xelatex"
   (generated)
   "t1.pdf"
   (rewritten before read)
-["xelatex"] 1756840117.40988 "/Users/kgb/Desktop/cyl/2026-1/t1.tex" "t1.xdv" "t1" 1756840118.78395 0
-  "/Users/kgb/Desktop/cyl/2026-1/t1.tex" 1756840116.06657 4385 6458027173edaac98df2b263e54051b4 ""
+["xelatex"] 1760897981.55456 "/Users/kgb/Desktop/cyl/2026-1/t1.tex" "t1.xdv" "t1" 1760897982.96947 0
+  "/Users/kgb/Desktop/cyl/2026-1/t1.tex" 1760897980.16063 6624 b6ba1bccf946cb0947e995042dc72c43 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm" 1136768653 1528 abec98dbc43e172678c11b3b9031252a ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi5.tfm" 1136768653 1508 3b32edd0d68f6498a5a375e78f9edc5e ""
@@ -147,10 +147,10 @@
   "/usr/local/texlive/2025/texmf-dist/web2c/texmf.cnf" 1739380943 42148 61becc7c670cd061bb319c643c27fdd4 ""
   "/usr/local/texlive/2025/texmf-var/web2c/xetex/xelatex.fmt" 1741450550 5639796 b6822fbf027c6598cec2e241e0925725 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "t1.aux" 1756840118.46009 1307 9eaf98cff850cfb078aaecad56a7042c "xelatex"
-  "t1.tex" 1756840116.06657 4385 6458027173edaac98df2b263e54051b4 ""
-  "t1.xsim" 1756840118.45557 7230 8333dbf4328fc0ddbd7252fcc153a736 "xelatex"
-  "tarea.cls" 1756682614.27681 7407 a6d91aa9415031a22e5d281a42559552 ""
+  "t1.aux" 1760897982.63832 1907 8f241f70bbb57bea40ba6c11038ae080 "xelatex"
+  "t1.tex" 1760897980.16063 6624 b6ba1bccf946cb0947e995042dc72c43 ""
+  "t1.xsim" 1760897982.63292 9248 d7b25aabd21a5c0b8eb022d8701b7cbf "xelatex"
+  "tarea.cls" 1758848345.10982 7407 a6d91aa9415031a22e5d281a42559552 ""
   "unam.jpg" 1756679270.59907 783497 3fef2373be86271a9f68856eed9215e9 ""
   (generated)
   "t1.aux"

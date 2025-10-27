@@ -25,7 +25,7 @@
 \materia{Conjuntos y lógica}
 \alum{}
 
-%\xsimsetup{solution/print = true}
+\xsimsetup{solution/print = true}
 
 
 \begin{document}
@@ -60,16 +60,32 @@ Por lo que suponer que existe tal conjunto no puede suceder.
 
 \begin{solution}
    Para la implicación $A = \varnothing$, entonces $A\subseteq \{A\}$. Es trivial. Para la dirección contraria
-   tenemos que demostrarlo por contradicción. Supongamos que $A\subseteq \{A\}$ y $A \neq \varnothing$.
+   tenemos que demostrarlo por contradicción. Supongamos que $A\subseteq \{A\}$ y $A \neq \varnothing$, entonces
+   existe $x \in A$ tal que $X \neq A$. Como $\{A\}$ tiene como único elemento el conjunto $A$ y $X \neq A$, entonces
+   como $x \in A$ y $x \notin \set{A}$. Por lo tanto $A \nsubseteq \set{A}$.
 \end{solution}
 
 \begin{exercise}
     Demuestre que si $A \subseteq B$, entonces $P(A) \subseteq P(B)$
 \end{exercise}
 
+\begin{solution}
+    Sea $X \in P(A)$, entonces $X \subseteq A$ y por hipótesis $A \subseteq B$ tenemos que $X \subseteq B$. Por lo tanto,
+    $X \in P(B)$.
+\end{solution}
+
 \begin{exercise}
   Demuestre que $A \subseteq C$ si y solo si $A \cup (B \cap C) = (A \cup B) \cap C$  
 \end{exercise}
+
+\begin{solution}
+    Para la demostras la idea tenemos que demostral la doble contención. Primero demostramos que $A \cup (B \cap C) \subseteq (A \cup B) \cap C$.
+    Sea $x \in A \cup (B \cap C)$, entonces $x \in A$ o $x \in (B \cap C)$. Caso (1) supongamos que $x \in A$ y por hipótesis
+    $A \subseteq C$, por lo que $x \in C$. Ademmás, como $x \in A$, entonces $X \in A \cup B$. Por lo tanto $ x \in (A \cup B)
+    \cap C$. La otra contención se demuestra de manera similar.
+    Para el regreso. Sea $x \in A$, entonces $x \in A \cup (B \cap C) = (A \cup B) \cap C$. Así, $x \in (A \cup B)$
+    y $x \in C$.
+\end{solution}
 
 \begin{exercise}
     Si $E$ es un conjunto que contiene a $A \cup B$, entonces:
@@ -78,6 +94,26 @@ Por lo que suponer que existe tal conjunto no puede suceder.
     \task $E \menos \varnothing = E, E \menos E= \varnothing$.
     \end{tasks}
 \end{exercise}
+
+\begin{solution}
+    \begin{tasks}
+        \task Demostramos la doble contención. Por demostrar que $E \menos (E \menos A) \subseteq A$. Sea 
+        $x \in E \menos (E \menos A)$, entonces $x \in E$ y $x \notin (E \menos A)$. Lo anterior nos dice que
+        $x \in E$ y $x \notin E\; \text{o}\; x \in A$. Por tanto $x \in A$.
+        Para el regreso tenemos que demostrar que $x \in E \menos (E \menos A)$. Sea $x \in A$, entonces $x \notin E$
+        o $x \in A$. Así $x \notin E\menos A$. Además, $A \subset A \cup B \subset E$ por hipótesis, entonces $x \in E$.
+        Por lo tanto $x \in E \menos (E\menos A)$.
+        \task
+        \begin{enumerate}
+            \item Por demostrar que $E \menos \varnothing = E$. Primero demostraremos que $E \menos \varnothing \subseteq E$,
+            entonces $x \in E$ y $x \notin \varnothing$. Por lo tanto $x \in E$. Tenemos que demostrar que $E \subseteq E\menos \varnothing$,
+            pero esta contención es trivial.
+            \item Por demostrar que $ E \menos E= \varnothing$. Sea $x \in E\menos E$, $x \in E$ y $x \notin E$. No hay elementos
+            que cumplan lo anterior. Por lo tanto es vacio.
+        \end{enumerate}
+    \end{tasks}
+    
+\end{solution}
 
 \begin{exercise}
     Para todo conjunto $A$, $B$ y $C$ se cumple lo siguiente:
