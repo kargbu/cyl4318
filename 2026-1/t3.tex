@@ -122,6 +122,7 @@ Sea \(\mathbb{P}\) un conjunto de letras proposicionales. Consideramos el conjun
 \begin{exercise} Demuestra que \(\{\neg,\;\land\}\) es un conjunto mínimo de conectivos, es decir, que el resto de conectivos se pueden definir en términos de ellos dos. También muestra que \(\{\neg,\;\iff\}\) y \(\{\lor,\;\land\}\) no son conjuntos mínimos de conectivos, es decir, hay al menos un conectivo que no se puede definir usando sólo los conectivos de cada conjunto.
 \end{exercise}
 
+\iffalse
 \begin{exercise}
   Demuestra que para cada fórmula \(\alpha\) y \(\beta\) se sigue:
   \begin{enumerate}
@@ -129,6 +130,7 @@ Sea \(\mathbb{P}\) un conjunto de letras proposicionales. Consideramos el conjun
    \item \(\vdash (\alpha \rightarrow \beta) \rightarrow (\neg \beta \rightarrow \neg \alpha)\)
   \end{enumerate}
 \end{exercise}
+\fi
 
 \begin{exercise}
   Usa el teorema de las \enquote{primas} para demostrar que de la deducción \(\set{\alpha,\;\neg \beta}\vdash (\neg \alpha \rightarrow \beta)\), con \(\gamma \equiv (\neg \alpha \rightarrow \beta)\), se puede demostrar que \(\set{\alpha',\;\beta'}\vdash \gamma'\).
@@ -137,5 +139,83 @@ Sea \(\mathbb{P}\) un conjunto de letras proposicionales. Consideramos el conjun
 \begin{exercise}
   Decimos que una teoría \(T\) es consistente si existe una fórmula \(\alpha\) tal que \(T\not \vdash \alpha\). Demuestra que el cálculo de proposiciones es consistente.
 \end{exercise}
+
+
+\begin{exercise}
+    Realiza las siguientes deducciones en el cálculo de proposiciones.
+    \begin{tasks}
+      \task $\vdash \neg \neg \beta \rightarrow \beta$
+      \task $\vdash \beta \rightarrow \neg \neg \beta$
+      \task 
+
+    \end{tasks}
+  \end{exercise}
+    
+    \begin{solution}
+       \text{a)}
+    \begin{tabular}{l|l|l}
+    \textbf{No.} & \textbf{Fórmula} & \textbf{Justificación} \\
+    \hline
+    1 & $\neg \neg \beta$ & \text{Premisa por el TD)} \\
+    2 & $\neg \beta \rightarrow \neg \beta$ & \text{Teorema ($\vdash P \rightarrow P$)} \\
+    3 & $(\neg \beta \rightarrow \neg \beta) \rightarrow ((\neg \beta \rightarrow \beta) \rightarrow \beta)$ & \text{Axioma 3} \\
+    4 & $(\neg \beta \rightarrow \beta) \rightarrow \beta$ & \text{MP (2, 3)} \\
+    5 & $\neg \neg \beta \rightarrow (\neg \beta \rightarrow \neg \neg \beta)$ & \text{Axioma 1} \\
+    6 & $\neg \beta \rightarrow \neg \neg \beta$ & \text{MP (1, 5)} \\
+    7 & $\beta$ & \text{A partir de (4) y (6), implica $\neg \beta \rightarrow \beta$ (ej. $\gamma$). (Axioma A3)} \\
+    \hline
+    8 & $\neg \neg \beta \rightarrow \beta$ & \text{TD (1-7)}
+    \end{tabular}
+    \end{solution}
+
+    \iffalse
+    \item[\textbf{c)}] \textbf{Negación de la Implicación: $\vdash \beta \rightarrow (\neg \gamma \rightarrow \neg (\beta \rightarrow \gamma))$}
+    
+    Esta fórmula es un teorema: $\vdash \beta \rightarrow (\neg \gamma \rightarrow \neg (\beta \rightarrow \gamma))$ es equivalente a $\beta, \neg \gamma \vdash \neg (\beta \rightarrow \gamma)$. Esto se demuestra por Reducción al Absurdo, donde $\beta, \neg \gamma, (\beta \rightarrow \gamma) \vdash \gamma \land \neg \gamma$, lo cual es una contradicción.
+
+    \item[\textbf{d)}] \textbf{Ley de Contraposición: $\vdash (\alpha \rightarrow \beta) \rightarrow (\neg \beta \rightarrow \neg \alpha)$}
+    
+    \begin{proof}
+    Demostraremos $\alpha \rightarrow \beta, \neg \beta \vdash \neg \alpha$.
+    \begin{tabular}{l|l|l}
+    \textbf{No.} & \textbf{Fórmula} & \textbf{Justificación} \\
+    \hline
+    1 & $\alpha \rightarrow \beta$ & \text{Premisa} \\
+    2 & $\neg \beta$ & \text{Premisa} \\
+    3 & $\neg \neg \alpha$ & \text{Premisa (para Reducción al Absurdo/TD)} \\
+    4 & $\neg \neg \alpha \rightarrow \alpha$ & \text{Eliminación de Doble Negación ($\neg \neg \alpha \rightarrow \alpha$)} \\
+    5 & $\alpha$ & \text{MP (4, 3)} \\
+    6 & $\beta$ & \text{MP (1, 5)} \\
+    7 & $\beta \rightarrow \neg \neg \beta$ & \text{Introducción de Doble Negación ($\beta \rightarrow \neg \neg \beta$)} \\
+    8 & $\neg \neg \beta$ & \text{MP (6, 7)} \\
+    9 & $\neg \beta \rightarrow (\neg \neg \beta \rightarrow \neg \beta)$ & \text{Instancia de (A1)} \\
+    10 & $\neg \neg \beta \rightarrow \neg \beta$ & \text{MP (2, 9)} \\
+    11 & $\neg \beta$ & \text{MP (8, 10)} (\text{Contradicción: $\neg \beta$ y $\beta$}) \\
+    \hline
+    12 & $\neg \alpha$ & \text{TD (3-11), dado que se obtiene una contradicción} \\
+    \hline
+    13 & $\neg \beta \rightarrow \neg \alpha$ & \text{TD (2-12)} \\
+    \hline
+    14 & $(\alpha \rightarrow \beta) \rightarrow (\neg \beta \rightarrow \neg \alpha)$ & \text{TD (1-13)}
+    \end{tabular}
+    \end{proof}
+
+    \item[\textbf{e)}] \textbf{Silogismo Hipotético: $\{\alpha \rightarrow \beta, \beta \rightarrow \gamma\} \vdash \alpha \rightarrow \gamma$}
+    
+    \begin{proof}
+    Demostraremos $\alpha \rightarrow \beta, \beta \rightarrow \gamma, \alpha \vdash \gamma$.
+    \begin{tabular}{l|l|l}
+    \textbf{No.} & \textbf{Fórmula} & \textbf{Justificación} \\
+    \hline
+    1 & $\alpha \rightarrow \beta$ & \text{Premisa} \\
+    2 & $\beta \rightarrow \gamma$ & \text{Premisa} \\
+    3 & $\alpha$ & \text{Premisa (para TD)} \\
+    4 & $\beta$ & \text{MP (1, 3)} \\
+    5 & $\gamma$ & \text{MP (2, 4)} \\
+    \hline
+    6 & $\alpha \rightarrow \gamma$ & \text{TD (3-5)}
+    \end{tabular}
+    \end{proof}
+    \fi
 
 \end{document}
