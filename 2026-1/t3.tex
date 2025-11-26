@@ -20,10 +20,12 @@
 #1
 }
 
-\examen{Tarea 2}
-\prof{Karina G. Buendía}
+\examen{Tarea 3}
+\prof{Karina García Buendía y José Dosal}
 \materia{Conjuntos y lógica}
 \alum{}
+
+\xsimsetup{solution/print = true}
 
 \begin{document}
 \HojaExamen{}{e}
@@ -61,15 +63,15 @@
   Con esto definimos el lenguaje \(\lan=(\al,\Phi)\) y al sistema formal \(\sis=(\lan,\set{R})\). Sea 
   \(T=\set{\alpha\st\alpha\text{ no tiene ocurrencias de }\circ}\).
   \begin{tasks}
-    \task Demuestra que \(T\) es correcta y no completa respecto a la propiedad \enquote{no tener \(b\) después de cada \(\circ\)}.
-    \task Muestra que \(T\) es completa y no correcta respecto a la propiedad \enquote{tener \(aa\) después de cada \(\circ\)}.
+    \task Demuestra que \(T\) es correcta y no completa respecto a \enquote{no tener \(b\) después de cada \(\circ\)}.
+    \task Muestra que \(T\) es completa y no correcta respecto a \enquote{tener \(aa\) después de cada \(\circ\)}.
   \end{tasks}
 \end{exercise}
 
 \begin{exercise}
   Considera el sistema formal dado por lo siguiente: el alfabeto es
   \(\al=\set{a,b,c}\), el conjunto de fórmulas es 
-  \(\Phi=\set{\alpha\in\expr\st\alpha\text{ empieza con } a}\) y las reglas de inferencia son
+  \(\Phi=\set{\alpha\in\expr\st\alpha\text{ empieza con } a}\) con las reglas de inferencia siguientes
   \[
     R_1:
     \begin{array}{c}
@@ -107,19 +109,21 @@
   \end{tasks}
 \end{exercise}
 
+\iffalse
 \begin{exercise}
   Usa el hecho de que \(2 = \{{0, 1}\}\) para demostrar que si \(\alpha\) y \(\beta\) son proposiciones tales que \(e(\alpha)=1\) si y solo si \(e(\beta)=1\) para toda evaluación \(e: From \to 2\), entonces \(\alpha\equiv \beta\).
 \end{exercise}
 
 \begin{exercise}
-Sea \(\mathbb{P}\) un conjunto de letras proposicionales. Consideramos el conjunto de todas las posibles evaluacione \(e: From \to 2\)una función. Demuestra que toda proposición \(e\) induce una partición en dos pedazos del conjunto \(2^]{\mathbb{P}}\) .
+Sea \(\mathbb{P}\) un conjunto de letras proposicionales. Consideramos el conjunto de todas las posibles evaluacione \(e: From \to 2\) una función. Demuestra que toda proposición \(e\) induce una partición en dos pedazos del conjunto \(2^]{\mathbb{P}}\) .
 \end{exercise}
+\fi
 
 \begin{exercise} Demuestra que \(\{\neg,\;\land\}\) es un conjunto mínimo de conectivos, es decir, que el resto de conectivos se pueden definir en términos de ellos dos. También muestra que \(\{\neg,\;\iff\}\) y \(\{\lor,\;\land\}\) no son conjuntos mínimos de conectivos, es decir, hay al menos un conectivo que no se puede definir usando sólo los conectivos de cada conjunto.
 \end{exercise}
 
 \begin{exercise}
-  Demuestra que para cada fórumula \(\alpha\) y \(\beta\) se sigue:
+  Demuestra que para cada fórmula \(\alpha\) y \(\beta\) se sigue:
   \begin{enumerate}
    \item \(\vdash \neg \alpha \rightarrow (\alpha \rightarrow \beta)\)
    \item \(\vdash (\alpha \rightarrow \beta) \rightarrow (\neg \beta \rightarrow \neg \alpha)\)
@@ -131,7 +135,7 @@ Sea \(\mathbb{P}\) un conjunto de letras proposicionales. Consideramos el conjun
 \end{exercise}
 
 \begin{exercise}
-  Decimos que una teoría \(T\) es consistente si existe una fórmula \(\alpha\) tal que \(T\not \vdash \alpha\). Demuestra que el calculo de proposiciones es consistente.
+  Decimos que una teoría \(T\) es consistente si existe una fórmula \(\alpha\) tal que \(T\not \vdash \alpha\). Demuestra que el cálculo de proposiciones es consistente.
 \end{exercise}
 
 \end{document}

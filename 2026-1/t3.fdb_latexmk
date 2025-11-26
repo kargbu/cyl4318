@@ -1,11 +1,11 @@
 # Fdb version 4
-["xdvipdfmx"] 1758912201.64048 "t3.xdv" "t3.pdf" "t3" 1758912201.95257 0
-  "t3.xdv" 1758912201.57593 30136 1f1517fa0f0e8aeb5da59241394865a1 "xelatex"
+["xdvipdfmx"] 1763928847.94133 "t3.xdv" "t3.pdf" "t3" 1763928848.20922 0
+  "t3.xdv" 1763928847.87805 29216 fb610aaef524d3a5c538ffb41ddb9408 "xelatex"
   (generated)
   "t3.pdf"
   (rewritten before read)
-["xelatex"] 1758912200.52676 "/Users/kgb/Desktop/cyl/2026-1/t3.tex" "t3.xdv" "t3" 1758912201.95132 0
-  "/Users/kgb/Desktop/cyl/2026-1/t3.tex" 1679505621 5057 bdf891173ba9a6d097dc0a680b9b149e ""
+["xelatex"] 1763928846.81236 "/Users/kgb/Desktop/cyl/2026-1/t3.tex" "t3.xdv" "t3" 1763928848.20791 0
+  "/Users/kgb/Desktop/cyl/2026-1/t3.tex" 1763928845.31306 5108 2bb5e74ada2d7b77618fee0b16a496f0 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm" 1136768653 1528 abec98dbc43e172678c11b3b9031252a ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi5.tfm" 1136768653 1508 3b32edd0d68f6498a5a375e78f9edc5e ""
@@ -147,9 +147,9 @@
   "/usr/local/texlive/2025/texmf-dist/web2c/texmf.cnf" 1739380943 42148 61becc7c670cd061bb319c643c27fdd4 ""
   "/usr/local/texlive/2025/texmf-var/web2c/xetex/xelatex.fmt" 1741450550 5639796 b6822fbf027c6598cec2e241e0925725 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "t3.aux" 1758912201.57117 1423 b1111b9e2048ab03ae72b0d839b441b6 "xelatex"
-  "t3.tex" 1679505621 5057 bdf891173ba9a6d097dc0a680b9b149e ""
-  "t3.xsim" 1758912201.56574 8021 ba8ae19e7a1fbf2d9cd65360d4301e4c "xelatex"
+  "t3.aux" 1763928847.87335 1322 b0226efb8e9c7181fada5a5f9338cb6c "xelatex"
+  "t3.tex" 1763928845.31306 5108 2bb5e74ada2d7b77618fee0b16a496f0 ""
+  "t3.xsim" 1763928847.86751 7952 4cfd3d00a33f4df549c26d232503d55c "xelatex"
   "tarea.cls" 1758848345.10982 7407 a6d91aa9415031a22e5d281a42559552 ""
   "unam.jpg" 1756679270.59907 783497 3fef2373be86271a9f68856eed9215e9 ""
   (generated)
