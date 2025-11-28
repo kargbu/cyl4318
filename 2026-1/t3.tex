@@ -25,7 +25,7 @@
 \materia{Conjuntos y lógica}
 \alum{}
 
-\xsimsetup{solution/print = true}
+%\xsimsetup{solution/print = true}
 
 \begin{document}
 \HojaExamen{}{e}
@@ -143,11 +143,12 @@ Sea \(\mathbb{P}\) un conjunto de letras proposicionales. Consideramos el conjun
 
 \begin{exercise}
     Realiza las siguientes deducciones en el cálculo de proposiciones.
-    \begin{tasks}
-      \task $\vdash \neg \neg \beta \rightarrow \beta$
+    \begin{tasks}(2)
+      \task $\vdash \neg \neg \beta \rightarrow \beta$ 
       \task $\vdash \beta \rightarrow \neg \neg \beta$
-      \task 
-
+      \task $\vdash \beta \rightarrow (\neg \gamma \rightarrow \neg (\beta \rightarrow \gamma))$
+      \task $\vdash (\alpha \rightarrow \beta) \rightarrow (\neg \beta \rightarrow \neg \alpha)$ 
+      \task $\{\alpha \rightarrow \beta, \beta \rightarrow \gamma\} \vdash \alpha \rightarrow \gamma$ 
     \end{tasks}
   \end{exercise}
     
@@ -156,7 +157,7 @@ Sea \(\mathbb{P}\) un conjunto de letras proposicionales. Consideramos el conjun
     \begin{tabular}{l|l|l}
     \textbf{No.} & \textbf{Fórmula} & \textbf{Justificación} \\
     \hline
-    1 & $\neg \neg \beta$ & \text{Premisa por el TD)} \\
+    1 & $\neg \neg \beta$ & \text{Premisa por el TD} \\
     2 & $\neg \beta \rightarrow \neg \beta$ & \text{Teorema ($\vdash P \rightarrow P$)} \\
     3 & $(\neg \beta \rightarrow \neg \beta) \rightarrow ((\neg \beta \rightarrow \beta) \rightarrow \beta)$ & \text{Axioma 3} \\
     4 & $(\neg \beta \rightarrow \beta) \rightarrow \beta$ & \text{MP (2, 3)} \\
@@ -209,7 +210,7 @@ Sea \(\mathbb{P}\) un conjunto de letras proposicionales. Consideramos el conjun
     \hline
     1 & $\alpha \rightarrow \beta$ & \text{Premisa} \\
     2 & $\beta \rightarrow \gamma$ & \text{Premisa} \\
-    3 & $\alpha$ & \text{Premisa (para TD)} \\
+    3 & $\alpha$ & \text{Premisa (para TD} \\
     4 & $\beta$ & \text{MP (1, 3)} \\
     5 & $\gamma$ & \text{MP (2, 4)} \\
     \hline
@@ -217,5 +218,24 @@ Sea \(\mathbb{P}\) un conjunto de letras proposicionales. Consideramos el conjun
     \end{tabular}
     \end{proof}
     \fi
+\chapter{Ejercicios de conjuntos}
+    \begin{exercise}
+      Demuestra las siguientes propiedades de los números naturales.
+      \begin{tasks}
+        \task Para todo $m,n,p \in \mathbb{N}$,
+          $$m<n\; \Leftrightarrow\; m + p < n + p $$.
+        \task Para todo $m,n \in \mathbb{N}$,
+          $$m + n = 0\; \Leftrightarrow\; m = 0\; \text{y}\; n = 0$$.
+      \end{tasks}
+    \end{exercise}
+
+    \begin{exercise}    
+      Sea $g$ una función en $A \times \mathbb{N}$ y sea $a \in A$. Entonces hay una única función $f$ tal que:
+      \begin{tasks}
+        \task $f(0) = a,$
+        \task $f(S(n)) = g(f(n),n)$ para todo $n$ tal que $S(n) \in \mathrm{dom}\,f$,
+        \task o bien $\mathrm{dom}\,f = \mathbb{N}$, o $\mathrm{dom}\,f = S(k)$ donde $k$ es el elemento máximo de 
+        $\{\,k \in \mathbb{N} : g(f(k),k) \notin A \,\}.$
+    \end{tasks}
 
 \end{document}
