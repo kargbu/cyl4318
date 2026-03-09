@@ -1,11 +1,11 @@
 # Fdb version 4
-["xdvipdfmx"] 1773080566 "historia.xdv" "historia.pdf" "historia" 1773080570 0
-  "historia.xdv" 1773080566 542520 85fd0068cee03f442495f770d10708be "xelatex"
+["xdvipdfmx"] 1773098651 "historia.xdv" "historia.pdf" "historia" 1773098654 0
+  "historia.xdv" 1773098650 566564 ff6688b038d0268b2a4b3850fb0747da "xelatex"
   (generated)
   "historia.pdf"
   (rewritten before read)
-["xelatex"] 1773080563 "/Users/del_mal/Desktop/cyl/2026-1/historia.tex" "historia.xdv" "historia" 1773080570 0
-  "/Users/del_mal/Desktop/cyl/2026-1/historia.tex" 1773080559 7171 5d73fe21be91851dc70c08293e129e50 ""
+["xelatex"] 1773098647 "/Users/del_mal/Desktop/cyl/2026-1/historia.tex" "historia.xdv" "historia" 1773098654 0
+  "/Users/del_mal/Desktop/cyl/2026-1/historia.tex" 1773098643 7428 8534723c1fa1a93cf83a78d2861de081 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
   "/usr/local/texlive/2022/texmf-dist/tex/generic/atbegshi/atbegshi.sty" 1575674566 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
@@ -175,10 +175,10 @@
   "Cantor.png" 1773078443 1523561 44bed731ef0b140684c6c1540c484a10 ""
   "Godel.png" 1773079736 1596741 335394f30cca1555aca2a46911261974 ""
   "Peano, Frege y Boole.png" 1773079788 2691382 d6e6ce2278cb76ee986d0914dd561792 ""
-  "historia.aux" 1773080569 2787 bba1914c677ad62fcf042a9022985a89 "xelatex"
-  "historia.nav" 1773080566 1313 d9356ae5499b31c8ce135a0f4e0b3b1b "xelatex"
-  "historia.out" 1773080564 0 d41d8cd98f00b204e9800998ecf8427e "xelatex"
-  "historia.tex" 1773080559 7171 5d73fe21be91851dc70c08293e129e50 ""
+  "historia.aux" 1773098651 2958 a1ce827dc47c865e24abba95c126799c "xelatex"
+  "historia.nav" 1773098651 1406 6af25d19b4b04353c0ad480532ad6ec8 "xelatex"
+  "historia.out" 1773098649 0 d41d8cd98f00b204e9800998ecf8427e "xelatex"
+  "historia.tex" 1773098643 7428 8534723c1fa1a93cf83a78d2861de081 ""
   (generated)
   "historia.aux"
   "historia.log"
