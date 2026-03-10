@@ -1,6 +1,6 @@
 \documentclass{beamer}
 \usepackage{amsthm}
-
+\usepackage{multicol}
 
 \usetheme{Madrid}
 
@@ -14,9 +14,9 @@
 \titlepage
 \end{frame}
 
-\begin{frame}{¿Por qué estudiar lógica y conjuntos}
+\begin{frame}{¿Por qué estudiar lógica y conjuntos?}
     \begin{block}{Según Ferreirós}
-        \textit {La lógica y los conjuntos se consieran los fundamentos de
+        \textit {La lógica y los conjuntos se consideran los fundamentos de
         las matemáticas porque\dots}
         \pause
         \begin{enumerate}
@@ -37,13 +37,23 @@
 
         \begin{enumerate}
             \item las inferencias,
+            \pause
             \item las estructuras formales y
+            \pause
             \item las relaciones entre proposiciones
         \end{enumerate}
 
     \begin{block}{Ejemplo estudiado desde Aristóteles}
-         \textit {Si todas las mujeres no son hombres y los hombres son inteligentes, entonces todas
-         las mujeres no son inteligentes.} 
+             \begin{multicols}{2}
+      \textit{
+        Todos los hombres son inteligentes. \\
+        Algunas mujeres son hombres. \\
+        Algunos inteligentes son mujeres. \\
+        Todos los hombres son inteligentes. \\
+        Ninguna mujer es inteligente. \\
+        Ninguna mujer es hombre.
+      }
+    \end{multicols}
     \end{block}
 \end{frame}
 
@@ -57,9 +67,9 @@
         individuo \textit{Y} para mantenerse con vida sin el consentimiento explícito de \textit{Y}.
      \end{block}
      \pause
-     Supongamos que Isaac Herzog despierta una mañana en un hospital y descubres que estás conectado, 
+     Supongamos que Isaac Herzog despierta una mañana en un hospital y descubre que está conectado, 
      mediante un sistema circulatorio compartido, a Donald John Trump que sufre una enfermedad renal 
-     fatal. Solo el presidente de Israel tienes el tipo de sangre necesario para filtrar la sangre de Trump;
+     fatal. Solo el presidente de Israel tiene el tipo de sangre necesario para filtrar la sangre de Trump;
     si se desconecta, Trump morirá. El hospital informa que Herzog debe permanecer conectado durante 9 meses
      para que se recupere.       
 \end{frame}
@@ -68,7 +78,7 @@
     \begin{block}{Deducción}
         \begin{enumerate}
             \item Si Trump es un individuo con derecho a la vida, ese derecho no le otorga el derecho
-            sobre la sangre y los riñones de Isaac Herzog.
+            a decidir utilizar el cuerpo de Isaac Herzog.
             \pause
             \item El derecho de la vida de Trump no puede estar por encima del consentimiento explícito
             de no prestar soporte vital.
@@ -85,8 +95,9 @@
 \end{frame}
 
 \begin{frame}{¿Qué es la teoría de conjuntos?}
-    Es la teoría que no define qué es un conjunto pero nos dice qué se puede y no se puede hacer con esto.
-    Hay varias versiónes para no caer en paradojas y la más usada en matemáticas es la de Zermelo.
+    Es la teoría que no define qué es un conjunto pero nos dice qué se puede y qué no se puede hacer con esto.
+
+    Existen diversas versiones axiomáticas para evitar las paradojas; la más extendida en la matemática contemporánea es la de Zermelo-Fraenkel
     \vspace{\baselineskip}
     \pause
 
@@ -155,7 +166,7 @@
 \end{frame}
 
 \begin{frame}{Orígenes de la teoría de conjuntos}
-    Cantor planteo los diferentes conjuntos infinitos, números transfinito y la jerarquía de los infinitos.
+    Cantor planteó los diferentes conjuntos infinitos, números transfinito y la jerarquía de los infinitos.
     \begin{center}
     \includegraphics[width=0.7\textwidth]{Cantor.png}
     \end{center}
@@ -166,16 +177,16 @@
     \vspace{\baselineskip}
     Como respuesta se plantearon tres programas:
     \begin{enumerate}
-        \item Logicismo, representado pro Frege y Russell. \pause Su objetivo era reducir las matemáticas
+        \item Logicismo, representado por Frege y Russell. Su objetivo era reducir las matemáticas
         a la lógica.
-        \item Formalismo, representado por Hilbert. \pause Su objetivo era demostrar que las matemáticas son
+        \item Formalismo, representado por Hilbert.  Su objetivo era demostrar que las matemáticas son
         consistentes.
-        \item Intuicionismo. L. E. J. Brouwer. \pause Su objetivo es que las matemáticas deben construirse.
+        \item Intuicionismo. L. E. J. Brouwer. Su objetivo es que las matemáticas deben construirse.
     \end{enumerate}
 \end{frame}
 
 \begin{frame}{Kurt Gödel}
-    Demostró el teorema de incompletitud en 1931. Mostrando que ningún sistiema formal, que pueda expresar y
+    Demostró el teorema de incompletitud en 1931. Mostrando que ningún sistema formal, que pueda expresar y
     desarrollar cierta cantidad mínima de aritmética, puede demostrar su propia consistencia.
     \begin{center}
     \includegraphics[width=0.7\textwidth]{Godel.png}
