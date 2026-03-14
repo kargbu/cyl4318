@@ -775,6 +775,12 @@ INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/csquotes/csquotes.cfg
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/csquotes/csquotes.cfg
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/csquotes/csquotes.cfg
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/csquotes/csquotes.cfg
+INPUT ./t3.aux
+INPUT t3.aux
+INPUT t3.aux
+INPUT ./t3.xsim
+INPUT ./t3.xsim
+INPUT t3.xsim
 OUTPUT t3.aux
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/graphics/graphicx.sty
 INPUT ./t3.xsim

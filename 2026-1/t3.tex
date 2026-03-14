@@ -56,8 +56,13 @@
     deductiva $\alpha \in \overline{\Gamma}$. (Reflexiva)
     \task Supongamos que \(\Delta\subseteq\Gamma\) y $\alpha \in \overline{\Delta}$. Por definición $\Delta \vdash \alpha$, entonces existe una lista finita
    $\alpha_1,\ldots,\alpha_n$ que cumple las condiciones de una deducción. Además, para cada $\alpha_i$ con $i \in \mathbb{N}$ son elementos de $\Delta$. Además,
-   como $\Delta \subsetq \Gamma$. Toda la lista $\alpha_1,\ldots,\alpha_n$ está en $\Gamma$. Por lo que, $\Gamma \vdash \alpha$.
-   \task 
+   como $\Delta \subseteq \Gamma$. Toda la lista $\alpha_1,\ldots,\alpha_n$ está en $\Gamma$. Por lo que, $\Gamma \vdash \alpha$.
+   \task Demostraremos la doble contención. Es decir, \(\overline{\overline{\Gamma}} \subseteq \overline{\Gamma}\) y \(\overline{\Gamma} \subseteq \overline{\overline{\Gamma}}\).
+   La contención \(\overline{\Gamma} \subseteq \overline{\overline{\Gamma}}\) se sigue del primer inciso. Demostraremos \(\overline{\overline{\Gamma}} \subseteq \overline{\Gamma}\).
+    Sea $\alpha \in \overline{\overline{\Gamma}}$, por definición $\overline{\Gamma} \vdash \alpha$, por lo cual existe una lista $\alpha_1,\ldots,\alpha_n$ que cumple con
+    las condiciones de deducción; así ${\alpha_1,\ldots,\alpha_n} \subseteq \overline{\Gamma}$. Como para cada $\alpha_i \in \overline{\Gamma}$, entonces $\Gamma \vdash \alpha_i$
+    para cada $i \in \mathbb{N}$. Además sabemos que si $\Gamma$ deduce cada $\alpha_i$, en particular deduce a $\alpha_n$, donde $\alpha_n = \alpha$. Por lo tanto
+    $\alpha \in \overline{\Gamma}$.
   \end{tasks}
 \end{solution}
 
