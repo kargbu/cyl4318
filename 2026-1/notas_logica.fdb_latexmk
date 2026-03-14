@@ -1,12 +1,11 @@
 # Fdb version 4
-["xdvipdfmx"] 1773453348 "t3.xdv" "t3.pdf" "t3" 1773453348 0
-  "t3.xdv" 1773453583 47768 7631dd4519bfdb711095db542df95943 "xelatex"
+["xdvipdfmx"] 1773451589 "notas_logica.xdv" "notas_logica.pdf" "notas_logica" 1773451589 0
+  "notas_logica.xdv" 1773451588 20428 fc844bfa0ad8ecf459027023a6f91151 "xelatex"
   (generated)
-  "t3.pdf"
+  "notas_logica.pdf"
   (rewritten before read)
-["xelatex"] 1773453581 "/Users/del_mal/Desktop/cyl/2026-1/t3.tex" "t3.xdv" "t3" 1773453584 2
-  "/Users/del_mal/Desktop/cyl/2026-1/t3.tex" 1773453578 9074 28cb1bd2772cd37532cd8dc222b3a99e ""
-  "/Users/del_mal/Library/texmf/tex/latex/tarea/unam.pdf" 1651096430 80625 24b3359db5a13e6d27a77020bc1e3a91 ""
+["xelatex"] 1773451586 "/Users/del_mal/Desktop/cyl/2026-1/notas_logica.tex" "notas_logica.xdv" "notas_logica" 1773451589 0
+  "/Users/del_mal/Desktop/cyl/2026-1/notas_logica.tex" 1773451586 3018 fe32fa72e13c8ec57a03ded7747ad2a2 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm" 1136768653 1528 abec98dbc43e172678c11b3b9031252a ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmmi5.tfm" 1136768653 1508 3b32edd0d68f6498a5a375e78f9edc5e ""
@@ -141,13 +140,13 @@
   "/usr/local/texlive/2022/texmf-dist/web2c/texmf.cnf" 1646502317 40171 cdab547de63d26590bebb3baff566530 ""
   "/usr/local/texlive/2022/texmf-var/web2c/xetex/xelatex.fmt" 1678029104 10497563 73e9c12dcd4e137c4bcbbd788ff879c5 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "t3.aux" 1773453583 1798 c1e9761883b22b3ce0724fdff7c11adb "xelatex"
-  "t3.tex" 1773453578 9074 28cb1bd2772cd37532cd8dc222b3a99e ""
-  "t3.xsim" 1773453583 10467 5c5d54050fc821c159dc2c6057fedbdd "xelatex"
+  "notas_logica.aux" 1773451588 268 fad1b284e38e3f7571d65b343d5ff26a "xelatex"
+  "notas_logica.tex" 1773451586 3018 fe32fa72e13c8ec57a03ded7747ad2a2 ""
+  "notas_logica.xsim" 1773451588 896 27b187a9a6a9f448c733b8e217f7747e "xelatex"
   "tarea.cls" 1758848345 7407 a6d91aa9415031a22e5d281a42559552 ""
   (generated)
-  "t3.aux"
-  "t3.log"
-  "t3.xdv"
-  "t3.xsim"
+  "notas_logica.aux"
+  "notas_logica.log"
+  "notas_logica.xdv"
+  "notas_logica.xsim"
   (rewritten before read)

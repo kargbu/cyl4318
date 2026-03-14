@@ -1,0 +1,76 @@
+\documentclass[fc]{tarea}
+
+\usepackage[style=mexican]{csquotes}
+
+\newtheorem{definition}{Definición}[chapter]
+\newtheorem{theorem}{Teorema}[chapter]
+
+\newcommand{\al}{\symscr{A}}
+\newcommand{\lan}{\symscr{L}}
+\newcommand{\sis}{\symup{SF}}
+\newcommand{\expresiones}{\symup{Exp}}
+\NewDocumentCommand{\expr}{O{\al}}{\expresiones(#1)}
+
+%conjuntos
+\providecommand\st{}
+\newcommand\SetSymbol[1][]{%
+\nonscript\:#1\vert
+\allowbreak
+\nonscript\:
+\mathopen{}}
+\DeclarePairedDelimiterX\set[1]{\{}{\}}{%
+\renewcommand\st{\SetSymbol[\delimsize]}
+#1
+}
+
+\begin{document}
+
+\chapter*{Estructuras}
+\begin{definition}
+Un tipo de semejanza $\rho$ está formado por un conjunto de constantes $\mathcal{C}$, un conjunto de letras funcionales $\mathcal{F}_n$ de aridad $n$, para cada 
+$n \in \mathbb{N}$ y un conjunto de letras predicativas $\mathcal{R}_n$ de aridad $n$, para cada $n \in \mathbb{N}$. Es decir,
+
+$$\rho = \mathcal{C} \cup \bigcup_{n \in \mathbb{N}} \mathcal{F}_n \cup \bigcup_{n \in \mathbb{N}} \mathcal{R}_n$$
+\end{definition}
+
+El tipo de semejanza son todos aquellos símbolos que le ``dan estructura'' a un conjunto. Pero necesitamos hablar de lo que pueden hacer, es decir, el tipo de
+semejanza nos da la posibilidad y el lengaje nos permite describirlos. Con un lenguaje podemos hablar de elementos y evaluar si son verdaderas o falsas.
+
+\begin{definition}
+Un lenguaje, de primer orden, $\mathcal{L}$ consta de lo siguiente:
+
+\begin{enumerate}
+    \item Un tipo de semejanza $\rho$.
+    \item Un conjunto (numerable) de variables llamado $VAR$.
+    \item Símbolos lógicos $\{\neg, \land, \lor, \to, \leftrightarrow, \forall, \exists\}$.
+    \item Símbolos auxiliares $\{(, ), ', \dots\}$.
+    \item Igualdad $\{=\}$.
+\end{enumerate}
+\end{definition}
+
+Todos los lenguajes coinciden en los puntos 2–5, entonces dos lenguajes son diferentes si difieren en su tipo de semejanza. Por esta razón muchos autores 
+prefieren llamar lenguaje al tipo de semejanza y obviar que tiene todos los demás símbolos.
+
+\begin{definition}
+  Un término consiste en lo siguiente:
+  \begin{enumerate}
+    \item Las variables y constantes son términos.
+    \item Si $t_1, t_2, \dots, t_n$ son términos y $f\in \mathcal{F}_n$, entonces $f(t_1,\cdots, t_n)$ es un término.
+  \end{enumerate}
+\end{definition}
+
+\begin{definition}
+  Sea $A$ un conjunto distinto del vacío, diremos que $A$ es el universo de interpretación. Una función de interpretación, en $A$, es una función 
+  $I:\rho \to A \cup \bigcup_{n \in \mathbb{N}} \mathcal{P}(A^n)$ que cumple lo siguiente:
+  \begin{enumerate}
+    \item Si $c \in \mathcal{C}$, entonces $I(c)\in A$.
+    \item Si $f \in \mathcal{F}_n$, entonces $I(f): A^n \to A$.
+    \item Si $R \in \mathcal{R}_n$, entonces $I(R)\subset A^n$.
+  \end{enumerate}
+\end{definition}
+
+\begin{definition}
+  Una estructura es una pareja $(A, I)$ donde $A$ es un conjunto no vacío e $I$ es una función de interpretación en $A$. Esta pareja se denota $\mathfrak{A} = (A,I)$.
+\end{definition}
+
+\end{document}

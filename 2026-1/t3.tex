@@ -36,8 +36,9 @@
   \(\Delta\subseteq\Gamma\) tal que \(\Delta\vdash\alpha\).
 \end{exercise}
 \begin{solution}
-  Si \(\Gamma\vdash\alpha\) entonces existe una sucesión finita de fórmulas \(\alpha_1,\ldots,\alpha_n\) que satisfacen las condiciones de la definición~\ref{def:ded}. Consideramos
-  \(\Delta=\Gamma\cap\{\alpha_1,\ldots,\alpha_n\}\). Notamos que \(\Delta\) es un conjunto finito y que \(\Delta\vdash\alpha\). Lo último es porque la misma lista finita \(\alpha_1,\ldots,\alpha_n\) es una deducción de \(\alpha\) a partir de \(\Delta\).
+  Como \(\Gamma\vdash\alpha\), entonces existe una sucesión finita de fórmulas \(\alpha_1,\ldots,\alpha_n\) que satisfacen las condiciones de la 
+  definición. Consideramos \(\Delta=\Gamma\cap\{\alpha_1,\ldots,\alpha_n\}\). Notamos que \(\Delta\) es un conjunto finito y que \(\Delta\vdash\alpha\), ya que
+  la lista\(\alpha_1,\ldots,\alpha_n\) es una deducción de \(\alpha\) a partir de \(\Delta\).
 \end{solution}
 
 \begin{exercise}
@@ -49,6 +50,19 @@
     \task \(\overline{\overline{\Gamma}}=\overline{\Gamma}\)
   \end{tasks}
 \end{exercise}
+\begin{solution}
+  \begin{tasks}
+    \task Sea $\alpha \in \Gamma$, entonces $\Gamma \vdash \alpha$. Dado que $\Gamma \vdash \alpha$ para todo $\alpha \in \Gamma$ y por definición de cerradura
+    deductiva $\alpha \in \overline{\Gamma}$. (Reflexiva)
+    \task Supongamos que \(\Delta\subseteq\Gamma\) y $\alpha \in \overline{\Delta}$. Por definición $\Delta \vdash \alpha$, entonces existe una lista finita
+   $\alpha_1,\ldots,\alpha_n$ que cumple las condiciones de una deducción. Además, para cada $\alpha_i$ con $i \in \mathbb{N}$ son elementos de $\Delta$. Además,
+   como $\Delta \subsetq \Gamma$. Toda la lista $\alpha_1,\ldots,\alpha_n$ está en $\Gamma$. Por lo que, $\Gamma \vdash \alpha$.
+   \task 
+  \end{tasks}
+\end{solution}
+
+
+
 
 \begin{exercise}
   Considera el alfabeto \(\al=\set{a,b,\circ}\), la definición de fórmula dada por \(\Phi=\set{\alpha\in\expr\st\alpha\text{ empieza con }a}\) y la regla de inferencia
