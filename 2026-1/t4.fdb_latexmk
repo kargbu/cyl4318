@@ -1,11 +1,11 @@
 # Fdb version 4
-["xdvipdfmx"] 1775668741 "t4.xdv" "t4.pdf" "t4" 1775668742 0
-  "t4.xdv" 1775668741 25788 0442375a1209ca5bd3fa7d0030e347f3 "xelatex"
+["xdvipdfmx"] 1775675434 "t4.xdv" "t4.pdf" "t4" 1775675435 0
+  "t4.xdv" 1775675511 29080 094a8d9c4b98abfad81f6a8141939aac "xelatex"
   (generated)
   "t4.pdf"
   (rewritten before read)
-["xelatex"] 1775668739 "/Users/del_mal/Desktop/cyl/2026-1/t4.tex" "t4.xdv" "t4" 1775668742 0
-  "/Users/del_mal/Desktop/cyl/2026-1/t4.tex" 1775668736 3520 f9417a088853e72227f9a2c7560fd2c3 ""
+["xelatex"] 1775675509 "/Users/del_mal/Desktop/cyl/2026-1/t4.tex" "t4.xdv" "t4" 1775675511 2
+  "/Users/del_mal/Desktop/cyl/2026-1/t4.tex" 1775675506 4258 7b5b3f2690a7e311f856f42e38793c8b ""
   "/Users/del_mal/Library/texmf/tex/latex/tarea/unam.pdf" 1651096430 80625 24b3359db5a13e6d27a77020bc1e3a91 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm" 1136768653 1528 abec98dbc43e172678c11b3b9031252a ""
@@ -141,9 +141,9 @@
   "/usr/local/texlive/2022/texmf-dist/web2c/texmf.cnf" 1646502317 40171 cdab547de63d26590bebb3baff566530 ""
   "/usr/local/texlive/2022/texmf-var/web2c/xetex/xelatex.fmt" 1678029104 10497563 73e9c12dcd4e137c4bcbbd788ff879c5 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "t4.aux" 1775668741 568 d954eac837c26045cfafdc9bac7bb63b "xelatex"
-  "t4.tex" 1775668736 3520 f9417a088853e72227f9a2c7560fd2c3 ""
-  "t4.xsim" 1775668741 4490 49a6065f32adcb0cdce7ebba42ae9ee0 "xelatex"
+  "t4.aux" 1775675511 668 c9a9ff580d35fe784bfaa5d548272245 "xelatex"
+  "t4.tex" 1775675506 4258 7b5b3f2690a7e311f856f42e38793c8b ""
+  "t4.xsim" 1775675511 5454 79219e47a01d1140ea252976b5764f01 "xelatex"
   "tarea.cls" 1758848345 7407 a6d91aa9415031a22e5d281a42559552 ""
   (generated)
   "t4.aux"

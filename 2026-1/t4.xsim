@@ -1,39 +1,39 @@
 \providecommand\numberofexercises{}
 \XSIM{solution-body}{}
-\XSIM{exercise-body}{exercise-1=={Sea $\mathscr {L}$ el lenguaje de primer orden que tiene una constante $c_0$, una letra relacional binaria $\mathscr {R}^2$, una letra funcional $f^2$ y dos símbolos funcionales $g^3$ y $h^3$. Es decir: \par \par \[ \mathscr {L} = \set { \mathscr {R}^2, f^2, g^3, h^3, c_0 }. \] \par \par La interpretación en el dominio es $\mathbb {N}$, donde la relación entre elementos de los naturales es el menor estricto. El primer símbolo funcional se interpreta como el sucesor $S:\mathbb {N} \to \mathbb {N}$ tal que $S(n)= n+1$ para $n \in \mathbb {N}$. Mientras que $g^3$ y $h^3$ son la suma y el producto en $\mathbb {N}$. Esta estructura se denomina \par \par \[ \mathscr {N} = (\mathbb {N}, <, S, +, \dot , 0). \] \par Traduce las sentencias de $\mathscr {N}$ en fórmulas del lenguaje $\mathscr {L}$. \par \begin {tasks} \task La relación $<$ en $\mathbb {N}$ es transitiva. \task La relación $<$ en $\mathbb {N}$ es antisimétrica. \task La relación $<$ en $\mathbb {N}$ es antireflexiva. \task El producto en $\mathbb {N}$ es conmutativo. \task El producto en $\mathbb {N}$ es asociativo. \task Todo número natural tiene un sucesor. \task Si $n<m$, entoces $n+r<m+r$, para cualesquiera $m,\,n,\,r\,\in \mathbb {N}$. \end {tasks} \par Calcula el valor de verdad de la fórmula de $\mathscr {L}$ bajo esta interpretación. \par \begin {tasks} \task $\exists y \forall x \mathscr {R}^2(x,y)$ \task $\forall x \exists y \mathscr {R}^2(x,y)$ \task $\forall x \forall y (\mathscr {R}^2(x,y) \Rightarrow \mathscr {R}^2(f^2(x),f^2(y)))$ \task $\forall x \forall y \mathscr {R}^2(x,y) \Rightarrow \forall x \forall y \mathscr {R}^2(f^2(x),f^2(y))$ \end {tasks} \par Supongamos que la función asignación $s: VAR \to \mathbb {N}$ con las siguientes asignaciones: $s(x)=5$, $s(y)=2$ y $s(z)=1$. Decide si $\mathscr {N} \models \varphi [s(x, y, z)]$. \par \begin {tasks} \task $\varphi = g^3(f^2(z), y) \approx x$ \task $\varphi = \exists w (R^2(f^2(w),x))$ \task $h^3(z,z) \approx y$ \task $\forall w h^2(w,z) \approx w$ \end {tasks} \par }||exercise-2=={Decide si $\mathscr {A} \models \varphi [s]$ por las siguientes fórmulas: \par \begin {tasks} \task $\exists x (\mathscr {R}(x, x) \Rightarrow \neg \mathscr {R}(x, x))$ \task $\mathscr {R(f(c),c) \Rightarrow \forall \mathscr {R}(f(x),x)}$ \task $\exists x \mathscr {R}(x,x) \Rightarrow \forall \mathscr {R}(x,x)$ \end {tasks}}||exercise-3=={Sean $\mathscr {A}$ una estructura, $\varphi (x_1,\dots ,x_n)$ una fórmula y $s_1, s_2: VAR \to A$ dos asignaciones. Si $s_1(x_i)=s_2(x_i)$ para todo $i \in \set {1, \dots , n}$, entonces $\mathscr {A} \models \varphi (x_1, \dots , x_n)[s_1]$ si y solo si $\mathscr {A} \models \varphi (x_1, \dots , x_n)[s_2]$.}}
+\XSIM{exercise-body}{exercise-1=={Sea $\mathscr {L}$ el lenguaje de primer orden que tiene una constante $c_0$, una letra relacional binaria $\mathscr {R}^2$, una letra funcional $f^2$ y dos símbolos funcionales $g^3$ y $h^3$. Es decir: \par \par \[ \mathscr {L} = \set { \mathscr {R}^2, f^2, g^3, h^3, c_0 }. \] \par \par La interpretación en el dominio es $\mathbb {N}$, donde la relación entre elementos de los naturales es el menor estricto. El primer símbolo funcional se interpreta como el sucesor $S:\mathbb {N} \to \mathbb {N}$ tal que $S(n)= n+1$ para $n \in \mathbb {N}$. Mientras que $g^3$ y $h^3$ son la suma y el producto en $\mathbb {N}$. Esta estructura se denomina \par \par \[ \mathscr {N} = (\mathbb {N}, <, S, +, \cdot , 0). \] \par Traduce las sentencias de $\mathscr {N}$ en fórmulas del lenguaje $\mathscr {L}$. \par \begin {tasks} \task La relación $<$ en $\mathbb {N}$ es transitiva. \task La relación $<$ en $\mathbb {N}$ es antisimétrica. \task La relación $<$ en $\mathbb {N}$ es antireflexiva. \task El producto en $\mathbb {N}$ es conmutativo. \task El producto en $\mathbb {N}$ es asociativo. \task Todo número natural tiene un sucesor. \task Si $n<m$, entoces $n+r<m+r$, para cualesquiera $m,\,n,\,r\,\in \mathbb {N}$. \end {tasks} \par Calcula el valor de verdad de la fórmula de $\mathscr {L}$ bajo esta interpretación. \par \begin {tasks} \task $\exists y \forall x \mathscr {R}^2(x,y)$ \task $\forall x \exists y \mathscr {R}^2(x,y)$ \task $\forall x \forall y (\mathscr {R}^2(x,y) \Rightarrow \mathscr {R}^2(f^2(x),f^2(y)))$ \task $\forall x \forall y \mathscr {R}^2(x,y) \Rightarrow \forall x \forall y \mathscr {R}^2(f^2(x),f^2(y))$ \end {tasks} \par Supongamos que la función asignación $s: VAR \to \mathbb {N}$ con las siguientes asignaciones: $s(x)=5$, $s(y)=2$ y $s(z)=1$. Decide si $\mathscr {N} \models \varphi [s(x, y, z)]$. \par \begin {tasks} \task $\varphi = g^3(f^2(z), y) \approx x$ \task $\varphi = \exists w (R^2(f^2(w),x))$ \task $h^3(z,z) \approx y$ \task $\forall w h^2(w,z) \approx w$ \end {tasks} \par }||exercise-2=={Decide si $\mathscr {A} \models \varphi [s]$ por las siguientes fórmulas: \par \begin {tasks} \task $\exists x (\mathscr {R}(x, x) \Rightarrow \neg \mathscr {R}(x, x))$ \task $\mathscr {R(f(c),c) \Rightarrow \forall x \mathscr {R}(f(x),x)}$ \task $\exists x \mathscr {R}(x,x) \Rightarrow \forall \mathscr {R}(x,x)$ \end {tasks}}||exercise-3=={Sean $\mathscr {A}$ una estructura, $\varphi (x_1,\dots ,x_n)$ una fórmula y $s_1, s_2: VAR \to A$ dos asignaciones. Si $s_1(x_i)=s_2(x_i)$ para todo $i \in \set {1, \dots , n}$, entonces $\mathscr {A} \models \varphi (x_1, \dots , x_n)[s_1]$ si y solo si $\mathscr {A} \models \varphi (x_1, \dots , x_n)[s_2]$.}||exercise-4=={Demuestra las siguientes afirmaciones: \par \begin {tasks} \task $\exists x \mathscr {R}(x) \not \models \mathscr {R}(x)$ \task $\mathscr {R}(x)\; \models \exists x \mathscr {R}(x)$ \task $\forall y \, \exists x \, \mathscr {R}(x,y) \;\not \models \; \exists x \, \forall y \, \mathscr {R}(x,y)t$ \task $\forall x \, \forall y \, \mathscr {R}(x,y) \;\models \; \forall y \;\mathscr {R}(x,y)$ \task $\text {Si } \models \alpha \text { entonces } \models \forall x \alpha $ \task $\exists x \, P(x) \;\equiv \; \neg \forall x \, \neg \mathscr {R}(x)$ \task $\forall x \, P(x) \;\equi \; \neg \exists x \, \neg \mathscr {R}(x)$ \end {tasks} \par }}
 \XSIM{goal}{exercise}{points}{0}
 \XSIM{totalgoal}{points}{0}
 \XSIM{goal}{exercise}{bonus-points}{0}
 \XSIM{totalgoal}{bonus-points}{0}
-\XSIM{order}{1||2||3}
+\XSIM{order}{1||2||3||4}
 \XSIM{use}{}
 \XSIM{use!}{}
-\XSIM{used}{exercise-1=={true}||exercise-2=={true}||exercise-3=={true}}
+\XSIM{used}{exercise-1=={true}||exercise-2=={true}||exercise-3=={true}||exercise-4=={true}}
 \XSIM{print}{}
 \XSIM{print!}{}
-\XSIM{printed}{exercise-1=={true}||exercise-2=={true}||exercise-3=={true}}
-\XSIM{total-number}{3}
-\XSIM{exercise}{3}
+\XSIM{printed}{exercise-1=={true}||exercise-2=={true}||exercise-3=={true}||exercise-4=={true}}
+\XSIM{total-number}{4}
+\XSIM{exercise}{4}
 \XSIM{types}{exercise}
-\XSIM{idtypes}{1=={exercise}||2=={exercise}||3=={exercise}}
-\XSIM{collections}{exercise-1=={all exercises}||exercise-2=={all exercises}||exercise-3=={all exercises}}
-\XSIM{collection:all exercises}{exercise-1||exercise-2||exercise-3}
-\setcounter{totalexerciseinall exercises}{3}
-\XSIM{id}{exercise-1=={1}||exercise-2=={2}||exercise-3=={3}}
-\XSIM{ID}{exercise-1=={1}||exercise-2=={2}||exercise-3=={3}}
-\XSIM{counter}{exercise-1=={1}||exercise-2=={2}||exercise-3=={3}}
-\XSIM{counter-value}{exercise-1=={1}||exercise-2=={2}||exercise-3=={3}}
+\XSIM{idtypes}{1=={exercise}||2=={exercise}||3=={exercise}||4=={exercise}}
+\XSIM{collections}{exercise-1=={all exercises}||exercise-2=={all exercises}||exercise-3=={all exercises}||exercise-4=={all exercises}}
+\XSIM{collection:all exercises}{exercise-1||exercise-2||exercise-3||exercise-4}
+\setcounter{totalexerciseinall exercises}{4}
+\XSIM{id}{exercise-1=={1}||exercise-2=={2}||exercise-3=={3}||exercise-4=={4}}
+\XSIM{ID}{exercise-1=={1}||exercise-2=={2}||exercise-3=={3}||exercise-4=={4}}
+\XSIM{counter}{exercise-1=={1}||exercise-2=={2}||exercise-3=={3}||exercise-4=={4}}
+\XSIM{counter-value}{exercise-1=={1}||exercise-2=={2}||exercise-3=={3}||exercise-4=={4}}
 \XSIM{solution}{}
-\XSIM{chapter-value}{exercise-1=={0}||exercise-2=={0}||exercise-3=={0}}
-\XSIM{chapter}{exercise-1=={0}||exercise-2=={0}||exercise-3=={0}}
-\XSIM{section-value}{exercise-1=={0}||exercise-2=={0}||exercise-3=={0}}
-\XSIM{section}{exercise-1=={0.0}||exercise-2=={0.0}||exercise-3=={0.0}}
-\XSIM{sectioning}{exercise-1=={{0}{0}{0}{0}{0}}||exercise-2=={{0}{0}{0}{0}{0}}||exercise-3=={{0}{0}{0}{0}{0}}}
+\XSIM{chapter-value}{exercise-1=={0}||exercise-2=={0}||exercise-3=={0}||exercise-4=={0}}
+\XSIM{chapter}{exercise-1=={0}||exercise-2=={0}||exercise-3=={0}||exercise-4=={0}}
+\XSIM{section-value}{exercise-1=={0}||exercise-2=={0}||exercise-3=={0}||exercise-4=={0}}
+\XSIM{section}{exercise-1=={0.0}||exercise-2=={0.0}||exercise-3=={0.0}||exercise-4=={0.0}}
+\XSIM{sectioning}{exercise-1=={{0}{0}{0}{0}{0}}||exercise-2=={{0}{0}{0}{0}{0}}||exercise-3=={{0}{0}{0}{0}{0}}||exercise-4=={{0}{0}{0}{0}{0}}}
 \XSIM{subtitle}{}
 \XSIM{points}{}
 \XSIM{bonus-points}{}
-\XSIM{page-value}{exercise-1=={1}||exercise-2=={1}||exercise-3=={2}}
-\XSIM{page}{exercise-1=={1}||exercise-2=={1}||exercise-3=={2}}
+\XSIM{page-value}{exercise-1=={1}||exercise-2=={1}||exercise-3=={2}||exercise-4=={2}}
+\XSIM{page}{exercise-1=={1}||exercise-2=={1}||exercise-3=={2}||exercise-4=={2}}
 \XSIM{tags}{}
 \XSIM{topics}{}
 \XSIM{userpoints}{}

@@ -2,12 +2,14 @@
 
 \usepackage[style=mexican]{csquotes}
 
+\newcommand{\modelequiv}{\mathrel{\vDash\!\!\!\equiv}}
 \newcommand{\menos}{\backslash}
 \newcommand{\al}{\symscr{A}}
 \newcommand{\lan}{\symscr{L}}
 \newcommand{\sis}{\symup{SF}}
 \newcommand{\expresiones}{\symup{Exp}}
 \NewDocumentCommand{\expr}{O{\al}}{\expresiones(#1)}
+
 
 %conjuntos
 \providecommand\st{}
@@ -51,7 +53,7 @@ y el producto en $\mathbb{N}$. Esta estructura se denomina
 
 
 \[
-\mathscr{N} = (\mathbb{N}, <, S, +, \dot, 0).
+\mathscr{N} = (\mathbb{N}, <, S, +, \cdot, 0).
 \]
 
 Traduce las sentencias de $\mathscr{N}$ en fórmulas del lenguaje $\mathscr{L}$.
@@ -92,7 +94,7 @@ Decide si $\mathscr{N} \models \varphi [s(x, y, z)]$.
 
 \begin{tasks}
     \task $\exists x (\mathscr{R}(x, x) \Rightarrow \neg \mathscr{R}(x, x))$
-    \task $\mathscr{R(f(c),c) \Rightarrow \forall \mathscr{R}(f(x),x)}$
+    \task $\mathscr{R(f(c),c) \Rightarrow \forall x \mathscr{R}(f(x),x)}$
     \task $\exists x \mathscr{R}(x,x) \Rightarrow \forall \mathscr{R}(x,x)$
 \end{tasks}
 \end{exercise}
@@ -101,6 +103,21 @@ Decide si $\mathscr{N} \models \varphi [s(x, y, z)]$.
     Sean $\mathscr{A}$ una estructura, $\varphi(x_1,\dots,x_n)$ una fórmula y $s_1, s_2: VAR \to A$ dos asignaciones. Si $s_1(x_i)=s_2(x_i)$
     para todo $i \in \set{1, \dots, n}$, entonces $\mathscr{A} \models \varphi(x_1, \dots, x_n)[s_1]$ si y solo si 
     $\mathscr{A} \models \varphi(x_1, \dots, x_n)[s_2]$.
+\end{exercise}
+
+\begin{exercise}
+    Demuestra las siguientes afirmaciones:
+
+\begin{tasks}
+    \task $\exists x \mathscr{R}(x) \not\models \mathscr{R}(x)$
+    \task $\mathscr{R}(x)\; \models \exists x \mathscr{R}(x)$
+    \task $\forall y \, \exists x \, \mathscr{R}(x,y) \;\not\models\; \exists x \, \forall y \, \mathscr{R}(x,y)t$
+    \task $\forall x \, \forall y \, \mathscr{R}(x,y) \;\models\; \forall y \;\mathscr{R}(x,y)$
+    \task $\text{Si } \models \alpha \text{ entonces } \models \forall x \alpha$
+    \task $\exists x \, P(x) \;\equiv\; \neg \forall x \, \neg \mathscr{R}(x)$
+    \task $\forall x \, P(x) \;\equi\; \neg \exists x \, \neg \mathscr{R}(x)$
+\end{tasks}
+
 \end{exercise}
 
 \end{document}
