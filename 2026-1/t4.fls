@@ -794,11 +794,13 @@ INPUT /usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmmi7.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmmi5.tfm
-INPUT ./t4.xsim
-INPUT ./t4.xsim
 INPUT /Users/del_mal/Library/texmf/tex/latex/tarea/unam.pdf
 INPUT /Users/del_mal/Library/texmf/tex/latex/tarea/unam.pdf
 OUTPUT t4.xdv
+INPUT ./t4.xsim
+INPUT ./t4.xsim
+INPUT /Users/del_mal/Library/texmf/tex/latex/tarea/unam.pdf
+INPUT /Users/del_mal/Library/texmf/tex/latex/tarea/unam.pdf
 INPUT t4.aux
 INPUT ./t4.xsim
 INPUT ./t4.xsim

@@ -30,13 +30,75 @@
 
 \begin{document}
 \HojaExamen{}{e}
-
-\chapter*{Lógica de primer ordan}
+\chapter*{Lógica de primer orden}
 
 \begin{exercise}
-Sea $\mathscr{L}$ el lenguaje de primer orde que tiene una constante $c_0$, una letra relacional binaria, $\mathscr{R}^2$. Una letra funcional unaria
-$f^1$ y dos símbolos funcionales binarios $g^2$ y $h^2$, es decir $\mathscr{L}={\mathscr{R}^2 ,f^1, g^2, h^2, c_0}$. La interpretación en el dominio de 
-interpretación es $\mathbb{N}$
+Sea $\mathscr{L}$ el lenguaje de primer orden que tiene una constante $c_0$, 
+una letra relacional binaria $\mathscr{R}^2$, una letra funcional $f^2$ 
+y dos símbolos funcionales $g^3$ y $h^3$. Es decir:
+
+
+\[
+\mathscr{L} = \set{ \mathscr{R}^2, f^2, g^3, h^3, c_0 }.
+\]
+
+
+La interpretación en el dominio es $\mathbb{N}$, donde la relación entre 
+elementos de los naturales es el menor estricto. El primer símbolo funcional 
+se interpreta como el sucesor $S:\mathbb{N} \to \mathbb{N}$ tal que 
+$S(n)= n+1$ para $n \in \mathbb{N}$. Mientras que $g^3$ y $h^3$ son la suma 
+y el producto en $\mathbb{N}$. Esta estructura se denomina 
+
+
+\[
+\mathscr{N} = (\mathbb{N}, <, S, +, \dot, 0).
+\]
+
+Traduce las sentencias de $\mathscr{N}$ en fórmulas del lenguaje $\mathscr{L}$.
+
+\begin{tasks}
+    \task La relación $<$ en $\mathbb{N}$ es transitiva.
+    \task La relación $<$ en $\mathbb{N}$ es antisimétrica.
+    \task La relación $<$ en $\mathbb{N}$ es antireflexiva.
+    \task El producto en $\mathbb{N}$ es conmutativo.
+    \task El producto en $\mathbb{N}$ es asociativo.
+    \task Todo número natural tiene un sucesor.
+    \task Si $n<m$, entoces $n+r<m+r$, para cualesquiera $m,\,n,\,r\,\in \mathbb{N}$.
+\end{tasks}
+    
+Calcula el valor de verdad de la fórmula de $\mathscr{L}$ bajo esta interpretación.
+
+\begin{tasks}
+    \task $\exists y \forall x \mathscr{R}^2(x,y)$
+    \task $\forall x \exists y \mathscr{R}^2(x,y)$
+    \task $\forall x \forall y (\mathscr{R}^2(x,y) \Rightarrow \mathscr{R}^2(f^2(x),f^2(y)))$
+    \task $\forall x \forall y \mathscr{R}^2(x,y) \Rightarrow \forall x \forall y \mathscr{R}^2(f^2(x),f^2(y))$
+\end{tasks}
+
+Supongamos que la función asignación $s: VAR \to \mathbb{N}$ con las siguientes asignaciones: $s(x)=5$, $s(y)=2$ y $s(z)=1$.
+Decide si $\mathscr{N} \models \varphi [s(x, y, z)]$.
+
+\begin{tasks}
+    \task $\varphi = g^3(f^2(z), y) \approx x$
+    \task $\varphi = \exists w (R^2(f^2(w),x))$
+    \task $h^3(z,z) \approx y$
+    \task $\forall w h^2(w,z) \approx w$
+\end{tasks}
+
+\end{exercise}
+
+\begin{exercise}
+    Decide si $\mathscr{A} \models \varphi[s]$ por las siguientes fórmulas:
+
+\begin{tasks}
+    \task $\exists x (\mathscr{R}(x, x) \Rightarrow \neg \mathscr{R}(x, x))$
+    \task $\mathscr{R(f(c),c) \Rightarrow \forall \mathscr{R}(f(x),x)}$
+    \task $\exists x \mathscr{R}(x,x) \Rightarrow \forall \mathscr{R}(x,x)$
+\end{tasks}
+\end{exercise}
+
+\begin{exercise}
+    Demuestra que 
 \end{exercise}
 
 \end{document}
