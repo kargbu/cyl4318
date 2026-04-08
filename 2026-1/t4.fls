@@ -790,6 +790,10 @@ INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/translations/translations-bas
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/translations/translations-basic-dictionary-spanish.trsl
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/translations/translations-basic-dictionary-spanish.trsl
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/translations/translations-basic-dictionary-spanish.trsl
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmmi7.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmmi5.tfm
 INPUT ./t4.xsim
 INPUT ./t4.xsim
 INPUT /Users/del_mal/Library/texmf/tex/latex/tarea/unam.pdf

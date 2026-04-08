@@ -1,6 +1,6 @@
 \providecommand\numberofexercises{}
 \XSIM{solution-body}{}
-\XSIM{exercise-body}{exercise-1=={\par }}
+\XSIM{exercise-body}{exercise-1=={Sea $\mathscr {L}$ el lenguaje de primer orde que tiene una constante $c_0$, una letra relacional binaria, $\mathscr {R}^2$. Una letra funcional unaria $f^1$ y dos símbolos funcionales binarios $g^2$ y $h^2$, es decir $\mathscr {L}={\mathscr {R}^2 ,f^1, g^2, h^2, c_0}$. La interpretación en el dominio de interpretación es $\mathbb {N}$}}
 \XSIM{goal}{exercise}{points}{0}
 \XSIM{totalgoal}{points}{0}
 \XSIM{goal}{exercise}{bonus-points}{0}

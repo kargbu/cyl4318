@@ -1,12 +1,16 @@
 # Fdb version 4
-["xdvipdfmx"] 1775601020 "t4.xdv" "t4.pdf" "t4" 1775601022 0
-  "t4.xdv" 1775601020 3372 85cc7839ea12e74cdb4bab96f2f44a02 "xelatex"
+["xdvipdfmx"] 1775660117 "t4.xdv" "t4.pdf" "t4" 1775660118 0
+  "t4.xdv" 1775660117 6668 155f83bf9b5233ef927730b2ee96faa1 "xelatex"
   (generated)
   "t4.pdf"
   (rewritten before read)
-["xelatex"] 1775601018 "/Users/del_mal/Desktop/cyl/2026-1/t4.tex" "t4.xdv" "t4" 1775601022 0
-  "/Users/del_mal/Desktop/cyl/2026-1/t4.tex" 1775601012 816 db0f4b2d444cecaad24f8e581f373743 ""
+["xelatex"] 1775660115 "/Users/del_mal/Desktop/cyl/2026-1/t4.tex" "t4.xdv" "t4" 1775660118 0
+  "/Users/del_mal/Desktop/cyl/2026-1/t4.tex" 1775660112 1127 739361b238757f17178c9a39a57472cf ""
   "/Users/del_mal/Library/texmf/tex/latex/tarea/unam.pdf" 1651096430 80625 24b3359db5a13e6d27a77020bc1e3a91 ""
+  "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
+  "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm" 1136768653 1528 abec98dbc43e172678c11b3b9031252a ""
+  "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmmi5.tfm" 1136768653 1508 3b32edd0d68f6498a5a375e78f9edc5e ""
+  "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmmi7.tfm" 1136768653 1528 e2423ae06dc7dee599cceb79d1c9dc32 ""
   "/usr/local/texlive/2022/texmf-dist/tex/generic/babel-spanish/spanish.ldf" 1622145181 26965 3b6d1655ad716f98e788b1fb9f2e87b8 ""
   "/usr/local/texlive/2022/texmf-dist/tex/generic/babel/babel.sty" 1676321701 151363 1f5971af3ef874d432e8fb43e0edb71d ""
   "/usr/local/texlive/2022/texmf-dist/tex/generic/babel/locale/es/babel-es.ini" 1663444672 4345 33a8cc6f0a7c6afcb84895b2c963a4e5 ""
@@ -137,9 +141,9 @@
   "/usr/local/texlive/2022/texmf-dist/web2c/texmf.cnf" 1646502317 40171 cdab547de63d26590bebb3baff566530 ""
   "/usr/local/texlive/2022/texmf-var/web2c/xetex/xelatex.fmt" 1678029104 10497563 73e9c12dcd4e137c4bcbbd788ff879c5 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "t4.aux" 1775601020 268 1802f2b971449924ce197afcf505ff8c "xelatex"
-  "t4.tex" 1775601012 816 db0f4b2d444cecaad24f8e581f373743 ""
-  "t4.xsim" 1775601020 1183 35de4cd7ad1c6ed9a454f261236744d4 "xelatex"
+  "t4.aux" 1775660117 368 4a09f1be6dfa940110f5a93e3c74b91b "xelatex"
+  "t4.tex" 1775660112 1127 739361b238757f17178c9a39a57472cf ""
+  "t4.xsim" 1775660117 1518 6aa731908270c4135e256673b5d7bf0c "xelatex"
   "tarea.cls" 1758848345 7407 a6d91aa9415031a22e5d281a42559552 ""
   (generated)
   "t4.aux"
