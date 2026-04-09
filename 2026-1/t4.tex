@@ -1,25 +1,27 @@
 \documentclass[fc]{tarea}
 
 \usepackage[style=mexican]{csquotes}
+\usepackage{mathtools} 
+\usepackage{turnstile} 
+\usepackage{mathrsfs}
 
-\newcommand{\modelequiv}{\mathrel{\vDash\!\!\!\equiv}}
-\newcommand{\menos}{\backslash}
-\newcommand{\al}{\symscr{A}}
-\newcommand{\lan}{\symscr{L}}
-\newcommand{\sis}{\symup{SF}}
-\newcommand{\expresiones}{\symup{Exp}}
+\newcommand{\mturnstile}[2]{\mathrel{\vDash\rotatebox[origin=c]{180}{$\vDash$}_{#1}^{#2}}}
+\newcommand{\menos}{\, \backslash \,}
+\newcommand{\al}{\mathscr{A}}
+\newcommand{\lan}{\mathscr{L}}
+\newcommand{\sis}{\text{SF}}
+\newcommand{\expresiones}{\text{Exp}}
 \NewDocumentCommand{\expr}{O{\al}}{\expresiones(#1)}
 
-
-%conjuntos
+% Conjuntos
 \providecommand\st{}
 \newcommand\SetSymbol[1][]{%
-\nonscript\:#1\vert
-\allowbreak
-\nonscript\:
-\mathopen{}}
+  \nonscript\:#1\vert
+  \allowbreak
+  \nonscript\:
+  \mathopen{}}
 \DeclarePairedDelimiterX\set[1]{\{}{\}}{%
-\renewcommand\st{\SetSymbol[\delimsize]}#1}
+  \renewcommand\st{\SetSymbol[\delimsize]}#1}
 \DeclarePairedDelimiterX\bset[1]{\lbrack}{\rbrack}{#1}
 
 \examen{Tarea 2}
@@ -27,8 +29,7 @@
 \materia{Conjuntos y lógica}
 \alum{}
 
-\xsimsetup{solution/print = true}
-
+%\xsimsetup{solution/print = true}
 
 \begin{document}
 \HojaExamen{}{e}
@@ -36,21 +37,18 @@
 
 \begin{exercise}
 Sea $\mathscr{L}$ el lenguaje de primer orden que tiene una constante $c_0$, 
-una letra relacional binaria $\mathscr{R}^2$, una letra funcional $f^2$ 
+una letra relacional binaria $\mathcal{R}^2$, una letra funcional $f^2$ 
 y dos símbolos funcionales $g^3$ y $h^3$. Es decir:
 
-
 \[
-\mathscr{L} = \set{ \mathscr{R}^2, f^2, g^3, h^3, c_0 }.
+\mathscr{L} = \set{ \mathcal{R}^2, f^2, g^3, h^3, c_0 }.
 \]
-
 
 La interpretación en el dominio es $\mathbb{N}$, donde la relación entre 
 elementos de los naturales es el menor estricto. El primer símbolo funcional 
-se interpreta como el sucesor $S:\mathbb{N} \to \mathbb{N}$ tal que 
-$S(n)= n+1$ para $n \in \mathbb{N}$. Mientras que $g^3$ y $h^3$ son la suma 
+se interpreta como el sucesor $S : \mathbb{N} \to \mathbb{N}$ tal que 
+$S(n) = n + 1$ para $n \in \mathbb{N}$. Mientras que $g^3$ y $h^3$ son la suma 
 y el producto en $\mathbb{N}$. Esta estructura se denomina 
-
 
 \[
 \mathscr{N} = (\mathbb{N}, <, S, +, \cdot, 0).
@@ -61,63 +59,118 @@ Traduce las sentencias de $\mathscr{N}$ en fórmulas del lenguaje $\mathscr{L}$.
 \begin{tasks}
     \task La relación $<$ en $\mathbb{N}$ es transitiva.
     \task La relación $<$ en $\mathbb{N}$ es antisimétrica.
-    \task La relación $<$ en $\mathbb{N}$ es antireflexiva.
+    \task La relación $<$ en $\mathbb{N}$ es antirreflexiva.
     \task El producto en $\mathbb{N}$ es conmutativo.
     \task El producto en $\mathbb{N}$ es asociativo.
     \task Todo número natural tiene un sucesor.
-    \task Si $n<m$, entoces $n+r<m+r$, para cualesquiera $m,\,n,\,r\,\in \mathbb{N}$.
+    \task Si $n < m$, entonces $n + r < m + r$, para cualesquiera $m, \, n, \, r \in \mathbb{N}$.
 \end{tasks}
     
 Calcula el valor de verdad de la fórmula de $\mathscr{L}$ bajo esta interpretación.
 
 \begin{tasks}
-    \task $\exists y \forall x \mathscr{R}^2(x,y)$
-    \task $\forall x \exists y \mathscr{R}^2(x,y)$
-    \task $\forall x \forall y (\mathscr{R}^2(x,y) \Rightarrow \mathscr{R}^2(f^2(x),f^2(y)))$
-    \task $\forall x \forall y \mathscr{R}^2(x,y) \Rightarrow \forall x \forall y \mathscr{R}^2(f^2(x),f^2(y))$
+    \task $\exists y \, \forall x \, \mathcal{R}^2(x, y)$
+    \task $\forall x \, \exists y \, \mathcal{R}^2(x, y)$
+    \task $\forall x \, \forall y \, (\mathcal{R}^2(x, y) \Rightarrow \mathcal{R}^2(f^2(x), f^2(y)))$
+    \task $\forall x \, \forall y \, \mathcal{R}^2(x, y) \Rightarrow \forall x \, \forall y \, \mathcal{R}^2(f^2(x), f^2(y))$
 \end{tasks}
 
-Supongamos que la función asignación $s: VAR \to \mathbb{N}$ con las siguientes asignaciones: $s(x)=5$, $s(y)=2$ y $s(z)=1$.
-Decide si $\mathscr{N} \models \varphi [s(x, y, z)]$.
+Supongamos que la función asignación $s : VAR \to \mathbb{N}$ con las siguientes asignaciones: $s(x) = 5$, $s(y) = 2$ y $s(z) = 1$.
+Decide si $\mathscr{N} \vDash \varphi[s(x, y, z)]$.
 
 \begin{tasks}
     \task $\varphi = g^3(f^2(z), y) \approx x$
-    \task $\varphi = \exists w (R^2(f^2(w),x))$
-    \task $h^3(z,z) \approx y$
-    \task $\forall w h^2(w,z) \approx w$
+    \task $\varphi = \exists w \, (\mathcal{R}^2(f^2(w), x))$
+    \task $h^3(z, z) \approx y$
+    \task $\forall w \, h^3(w, z) \approx w$
 \end{tasks}
 
 \end{exercise}
 
 \begin{exercise}
-    Decide si $\mathscr{A} \models \varphi[s]$ por las siguientes fórmulas:
+    Decide si $\mathscr{A} \vDash \varphi[s]$ para las siguientes fórmulas:
 
 \begin{tasks}
-    \task $\exists x (\mathscr{R}(x, x) \Rightarrow \neg \mathscr{R}(x, x))$
-    \task $\mathscr{R(f(c),c) \Rightarrow \forall x \mathscr{R}(f(x),x)}$
-    \task $\exists x \mathscr{R}(x,x) \Rightarrow \forall \mathscr{R}(x,x)$
+    \task $\exists x \, (\mathcal{R}(x, x) \Rightarrow \neg \mathcal{R}(x, x))$
+    \task $\mathcal{R}(f(c), c) \Rightarrow \forall x \, \mathcal{R}(f(x), x)$
+    \task $\exists x \, \mathcal{R}(x, x) \Rightarrow \forall x \, \mathcal{R}(x, x)$
 \end{tasks}
 \end{exercise}
 
 \begin{exercise}
-    Sean $\mathscr{A}$ una estructura, $\varphi(x_1,\dots,x_n)$ una fórmula y $s_1, s_2: VAR \to A$ dos asignaciones. Si $s_1(x_i)=s_2(x_i)$
-    para todo $i \in \set{1, \dots, n}$, entonces $\mathscr{A} \models \varphi(x_1, \dots, x_n)[s_1]$ si y solo si 
-    $\mathscr{A} \models \varphi(x_1, \dots, x_n)[s_2]$.
+    Sean $\mathscr{A}$ una estructura, $\varphi(x_1, \dots, x_n)$ una fórmula y $s_1, s_2 : VAR \to A$ dos asignaciones. Si $s_1(x_i) = s_2(x_i)$
+    para todo $i \in \set{1, \dots, n}$, entonces $\mathscr{A} \vDash \varphi(x_1, \dots, x_n)[s_1]$ si y solo si 
+    $\mathscr{A} \vDash \varphi(x_1, \dots, x_n)[s_2]$.
 \end{exercise}
 
 \begin{exercise}
     Demuestra las siguientes afirmaciones:
 
 \begin{tasks}
-    \task $\exists x \mathscr{R}(x) \not\models \mathscr{R}(x)$
-    \task $\mathscr{R}(x)\; \models \exists x \mathscr{R}(x)$
-    \task $\forall y \, \exists x \, \mathscr{R}(x,y) \;\not\models\; \exists x \, \forall y \, \mathscr{R}(x,y)t$
-    \task $\forall x \, \forall y \, \mathscr{R}(x,y) \;\models\; \forall y \;\mathscr{R}(x,y)$
-    \task $\text{Si } \models \alpha \text{ entonces } \models \forall x \alpha$
-    \task $\exists x \, P(x) \;\equiv\; \neg \forall x \, \neg \mathscr{R}(x)$
-    \task $\forall x \, P(x) \;\equi\; \neg \exists x \, \neg \mathscr{R}(x)$
+    \task $\exists x \, \mathcal{R}(x) \nvDash \mathcal{R}(x)$
+    \task $\mathcal{R}(x) \vDash \exists x \, \mathcal{R}(x)$
+    \task $\forall y \, \exists x \, \mathcal{R}(x, y) \nvDash \exists x \, \forall y \, \mathcal{R}(x, y)$
+    \task $\forall x \, \forall y \, \mathcal{R}(x, y) \vDash \forall y \, \mathcal{R}(x, y)$
+    \task Si $\vDash \alpha$ entonces $\vDash \forall x \, \alpha$
+    \task $\exists x \, \mathcal{R}(x)\; \mturnstile{}{}\; \neg \forall x \, \neg \mathcal{R}(x)$
+    \task $\forall x \, \mathcal{R}(x)\; \mturnstile{}{}\; \neg \exists x \, \neg \mathcal{R}(x)$
 \end{tasks}
 
+\end{exercise}
+
+\chapter*{Teoría de conjuntos}
+
+\begin{exercise}
+    Para todo conjunto $A$, $B$ y $C$ se cumple lo siguiente:
+    \begin{tasks}
+    \task $A\, \triangle\, \varnothing = A$
+    \task $A\, \triangle\, A = \varnothing$
+    \task $A\, \triangle\, B = B\, \triangle\, A$
+    \task $(A\, \triangle\, B)\, \triangle\, C = A\, \triangle\, (B\, \triangle\, C)$
+    \task $A\, \cap\, (B\, \triangle\, C) = (A\, \cap\, B)\, \triangle\, (A\, \cap\, C) $
+    \task Si $A\, \triangle\, B = A\, \triangle\, C$, entonces $B = C$
+    \end{tasks}
+\end{exercise}
+
+\begin{exercise}
+    \begin{tasks}
+        \task Demuestre que si $A \subseteq C$, entonces $A \cup (B \cap C) = (A \cup B) \cap C$ .
+        \task ¿Será cierto el resultado anterior si se suprime la hipótesis $A \subseteq C$?
+        \task Demuestre que $A \subseteq C$ si y solo si $A \cup (B \cap C) = (A \cup B) \cap C$.
+    \end{tasks}
+\end{exercise}
+
+\begin{solution}
+    Para la demostras la idea tenemos que demostral la doble contención. Primero demostramos que $A \cup (B \cap C) \subseteq (A \cup B) \cap C$.
+    Sea $x \in A \cup (B \cap C)$, entonces $x \in A$ o $x \in (B \cap C)$. Caso (1) supongamos que $x \in A$ y por hipótesis
+    $A \subseteq C$, por lo que $x \in C$. Ademmás, como $x \in A$, entonces $X \in A \cup B$. Por lo tanto $ x \in (A \cup B)
+    \cap C$. La otra contención se demuestra de manera similar.
+    Para el regreso. Sea $x \in A$, entonces $x \in A \cup (B \cap C) = (A \cup B) \cap C$. Así, $x \in (A \cup B)$
+    y $x \in C$.
+\end{solution}
+
+\begin{exercise}
+    Sea $A$ un conjunto. Demuestre que el ``complemento'' de $A$ no es un conjunto. (El ``complemento'' de $A$ es el conjunto de todos los $x \not\in A$).
+\end{exercise}
+
+\begin{exercise}
+    Pruebe lo siguiente:
+\begin{tasks}
+    \task $A \menos B = (A \cup B) \menos B$
+    \task $A \menos (B \menos C) = (A \menos B) \cup (A \cap C)$
+    \task $(A \menos C) \menos (B \menos C) = (A \menos B) \menos C$
+    \task $(A \menos C) \cup (B \menos C) = (A \cup B) \menos C$
+    \task $(A \menos C) \cap (B \menos C) = (A \cap B) \menos C$
+    \task $(A \menos B) \menos (A \menos C) = A \cap (C \menos B)$
+\end{tasks}
+\end{exercise}
+
+\begin{exercise}
+    Demuestra las siguientes propiedades:
+    \begin{tasks}
+    \task $A_1 \cup A_2 \cup \dots \cup A_n = (A_1 \menos A_2) \cup \dots \cup (A_{n-1} \menos A_n) \cup (A_n \menos A_1) \cup \Bigl( \bigcap_{k=1}^n A_k \Bigr)$
+    \task Si $A, B \subseteq X$, entonces $(X \menos A) \menos (X \menos B) = B \menos A$
+\end{tasks}
 \end{exercise}
 
 \end{document}

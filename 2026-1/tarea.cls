@@ -70,7 +70,7 @@
   exercise/pre-hook = {\vspace{-10pt}},
   exercise/post-hook = {\vspace{3pt}},
   solution/pre-hook = {\vspace{-15pt}\color{violet}},
-  solution/post-hook = {\vspace{3pt}}
+  solution/post-hook = {\vspace{3pt}\color{violet}}
 }
 
 \NewTasksEnvironment[label-format={\color{violet!80}},item-format={\color{violet!80}}]{res}[*]
