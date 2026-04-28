@@ -7,6 +7,8 @@
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
+\usepackage{tikz}
+\usetikzlibrary{positioning}
 
 % --- Título y Datos ---
 \title{Álgebra de Heyting}
@@ -31,7 +33,7 @@
     \dots que satisfacen las siguientes identidades.
 
     \begin{enumerate}
-        \item $a \land a = a$, $x \lor a =a$,
+        \item $a \land a = a$, $a \lor a =a$,
         \item $1 \land a = a$, $0 \lor a =a$,
         \item $a \land (b \lor a) = a = (a \land b) \lor a$. 
     \end{enumerate}
@@ -46,12 +48,126 @@
 \begin{frame}{Álgebra de Heyting}
     Un álgebra de Heyting $H$ (también llamado retícula brouweriana) es una retícula con $0$ y $1$. Dicha retícula tiene,
     para cualquier par de elementos, $x$ y $y$ un exponencial $y^x$. Este exponencial es usualmente denotado como
-    $x \rightarrow y$, que es la mínima cota superior de todos quellos elementos $z \land x \leq y$. Es decir, $z \leq
-    (x\rightarrow y) \iff z \land x \leq y$.
+    $x \Rightarrow y$, que es la mínima cota superior de todos quellos elementos $z \land x \leq y$.
+\vspace{0.5cm} 
     \begin{enumerate}
         \item Al realizar la intersección con $x$ el resultado no pasa de $y$.
         \item Cada elemento $z$ que esté por debajo de $y$ (con el ínfimo) debe ser menor o igual al elemento implicación.
     \end{enumerate}
+\end{frame}
+
+
+\begin{frame}{La Geometría de la Implicación}
+    \begin{block}{Definición Algebraica}
+    La implicación $x \Rightarrow y$ es como un complemento de $x$ respecto a $y$, definido por la adjunción:
+    \[ z \leq (x \Rightarrow y) \iff z \wedge x \leq y \]
+    \end{block}
+
+    \vfill
+
+    \begin{columns}
+        \column{0.5\textwidth}
+        \begin{itemize}
+            \item $x \Rightarrow y$ es el elemento más alto que hace que $x$ no supere a $y$.
+            \item En el diagrama, $y$ siempre está por debajo de $x \Rightarrow y$.
+        \end{itemize}
+
+        \column{0.5\textwidth}
+        \begin{enumerate}
+            \item $x \Rightarrow x = 1$
+            \item $x \wedge (x \Rightarrow y) \leq y$
+            \item $y \leq (x \Rightarrow y)$
+        \end{enumerate}
+    \end{columns}
+\end{frame}
+
+\begin{frame}
+    \centering
+    \footnotesize \textit{Nota: $x \Rightarrow y$ actúa como el ``techo'' de seguridad para la operación ínfimo con $x$.}
+    \centering
+
+ \begin{tikzpicture}[scale=1.5, every node/.style={circle, fill=black, inner sep=1.5pt}]
+
+  % Eje central y nodos principales
+  \node (one) at (0,3) [label=above:$1$] {};
+  \node (impl) at (-1,2) [label=left:{\color{blue}$x \Rightarrow y$}] {};
+  \node (x) at (1,1.5) [label=right:{\color{red}$x$}] {};
+  \node (y) at (-1,1) [label=left:$y$] {};
+  \node (z) at (-1.5,1.5) [label=left:$z$] {};
+  \node (meet) at (0,0.5) [label=below:{\small $z \wedge x$}] {};
+  \node (zero) at (0,0) [label=below:$0$] {};
+
+  % Relaciones de orden (Líneas)
+  \draw (zero) -- (meet);
+  \draw (meet) -- (z) -- (impl) -- (one);
+  \draw (meet) -- (x) -- (one);
+  \draw (y) -- (impl);
+  \draw[dashed] (zero) -- (y);
+
+  % Notas aclaratorias sin encimarse
+  \node[fill=none, draw=blue, thick, text width=3.5cm, font=\small] at (2.5, 2.5) {
+    \textbf{Regla:}\\
+    Si $z$ está debajo de $x \Rightarrow y$,\\
+    entonces su encuentro con $x$\\
+    ($z \wedge x$) debe estar debajo de $y$.
+  };
+
+\end{tikzpicture}
+\end{frame}
+
+\begin{frame}{Definición del pseudocomplemento relativo}
+    En un Álgebra de Heyting $H$, para cada par $x, y \in H$, existe un elemento $x \Rightarrow y$ definido por la propiedad
+    
+    \begin{block}{Propiedad}
+        \[ z \leq (x \Rightarrow y) \iff z \wedge x \leq y \]
+    \end{block}
+    
+    \begin{itemize}
+        \item $x \Rightarrow y$ es el máximo del conjunto $\{z \in H : z \wedge x \leq y\}$.
+        \item Esto brinda a la retícula de una estructura lógica donde la implicación está siempre definida.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Consecuencias en el orden}
+    De la definición se derivan propiedades visuales y algebraicas críticas:
+    
+    \vfill
+    \begin{enumerate}
+        \item Ubicación de la consecuencia.
+        Como $y \wedge x \leq y$ es siempre verdadera, se sigue que:
+        \[ y \leq (x \Rightarrow y) \]
+        \textit{En el diagrama, la implicación siempre está por encima de $y$.}
+        
+        \item Relación con el ínfimo.
+        La operación $(\cdot \wedge x)$ y $(x \Rightarrow \cdot)$ forman una relación entre el y y la implicación porque
+        estas dos siempre conservan el orden cuando se va de una a la otras.
+    \end{enumerate}
+    \vfill
+    
+    \begin{exampleblock}{Intuición}
+        Si $y$ es ``verdad'' (está arriba), la implicación $x \Rightarrow y$ debe ser ``más verdad'' o igual.
+    \end{exampleblock}
+\end{frame}
+
+\begin{frame}{De Álgebras Booleanas a Heyting}
+    \begin{block}{Teorema}
+    Toda Álgebra Booleana es un Álgebra de Heyting definiendo:
+    \[ x \Rightarrow y := \neg x \vee y \]
+    \end{block}
+
+    \begin{itemize}
+        \item \textbf{Implicación Material:} En lógica clásica, $p \to q \equiv \neg p \vee q$.
+        \item \textbf{La Adjunción:} Se cumple que $z \leq (\neg x \vee y) \iff z \wedge x \leq y$.
+        \item \textbf{Diferencia Fundamental:}
+        \begin{itemize}
+            \item \textbf{Booleana:} El complemento $\neg x$ es global y absoluto ($x \vee \neg x = 1$).
+            \item \textbf{Heyting:} La implicación es relativa. Ejemplo: Los abiertos de $\mathbb{R}$ son Heyting pero no Booleanos.
+        \end{itemize}
+    \end{itemize}
+    
+    \begin{exampleblock}{Conclusión}
+        Las Álgebras de Heyting son una \textbf{generalización} de las Booleanas donde el principio del tercero excluido no necesariamente se cumple.
+    \end{exampleblock}
 \end{frame}
 
 \end{document}
