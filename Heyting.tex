@@ -1,0 +1,57 @@
+\documentclass{beamer}
+\usetheme{Madrid}
+\usecolortheme{whale}
+
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+% --- Título y Datos ---
+\title{Álgebra de Heyting}
+\subtitle{Retícula brouweriana}
+\author{Karina G. Buendía}
+\date{abril de 2026}
+
+\begin{document}
+
+% Slide 1: Portada
+\frame{\titlepage}
+
+% Slide 2: Introducción - Retículas
+\begin{frame}{Retículas}
+    Una retítucla $L$ es un conjunto parcialmente ordenado que tienen dos productos binarios. Si una retícula $L$ tiene
+    elementos $0$ y $1$ se puede definir ecuacionalmente como un conjunto con dos elementos distinguidos y dos operaciones
+    binarias $\land$ y $\lor$; estas operaciones son tanto asociativas como conmutativas \dots
+\end{frame}
+
+% Slide 3: Introducción - Álgebra de Boole
+\begin{frame}
+    \dots que satisfacen las siguientes identidades.
+
+    \begin{enumerate}
+        \item $a \land a = a$, $x \lor a =a$,
+        \item $1 \land a = a$, $0 \lor a =a$,
+        \item $a \land (b \lor a) = a = (a \land b) \lor a$. 
+    \end{enumerate}
+\vspace{0.5cm}
+    Dadas estas ecuaciones, el orden parcial puede ser recuperado porque $a \leq b$ si y solo si $a \land b = a$ (o bien,
+    de manera equivalente $a \lor b = b$).
+
+\vspace{0.5cm}
+    El conjunto parcialmente ordenado de todos los subconjuntos de un conjunto dado es siempre un álgebra de booleana.
+\end{frame}
+
+\begin{frame}{Álgebra de Heyting}
+    Un álgebra de Heyting $H$ (también llamado retícula brouweriana) es una retícula con $0$ y $1$. Dicha retícula tiene,
+    para cualquier par de elementos, $x$ y $y$ un exponencial $y^x$. Este exponencial es usualmente denotado como
+    $x \rightarrow y$, que es la mínima cota superior de todos quellos elementos $z \land x \leq y$. Es decir, $z \leq
+    (x\rightarrow y) \iff z \land x \leq y$.
+    \begin{enumerate}
+        \item Al realizar la intersección con $x$ el resultado no pasa de $y$.
+        \item Cada elemento $z$ que esté por debajo de $y$ (con el ínfimo) debe ser menor o igual al elemento implicación.
+    \end{enumerate}
+\end{frame}
+
+\end{document}
