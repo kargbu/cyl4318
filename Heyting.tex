@@ -57,8 +57,8 @@
 \end{frame}
 
 
-\begin{frame}{La Geometría de la Implicación}
-    \begin{block}{Definición Algebraica}
+\begin{frame}{La geometría de la implicación}
+    \begin{block}{Definición algebraica}
     La implicación $x \Rightarrow y$ es como un complemento de $x$ respecto a $y$, definido por la adjunción:
     \[ z \leq (x \Rightarrow y) \iff z \wedge x \leq y \]
     \end{block}
@@ -116,7 +116,7 @@
 \end{frame}
 
 \begin{frame}{Definición del pseudocomplemento relativo}
-    En un Álgebra de Heyting $H$, para cada par $x, y \in H$, existe un elemento $x \Rightarrow y$ definido por la propiedad
+    En un álgebra de Heyting $H$, para cada par $x, y \in H$, existe un elemento $x \Rightarrow y$ definido por la propiedad
     
     \begin{block}{Propiedad}
         \[ z \leq (x \Rightarrow y) \iff z \wedge x \leq y \]
@@ -149,16 +149,16 @@
     \end{exampleblock}
 \end{frame}
 
-\begin{frame}{De Álgebras Booleanas a Heyting}
+\begin{frame}{De álgebras Booleanas a Heyting}
     \begin{block}{Teorema}
-    Toda Álgebra Booleana es un Álgebra de Heyting definiendo:
+    Toda álgebra Booleana es un álgebra de Heyting definiendo:
     \[ x \Rightarrow y := \neg x \vee y \]
     \end{block}
 
     \begin{itemize}
         \item \textbf{Implicación Material:} En lógica clásica, $p \to q \equiv \neg p \vee q$.
         \item \textbf{La Adjunción:} Se cumple que $z \leq (\neg x \vee y) \iff z \wedge x \leq y$.
-        \item \textbf{Diferencia Fundamental:}
+        \item \textbf{¿Cuál es la diferencia}
         \begin{itemize}
             \item \textbf{Booleana:} El complemento $\neg x$ es global y absoluto ($x \vee \neg x = 1$).
             \item \textbf{Heyting:} La implicación es relativa. Ejemplo: Los abiertos de $\mathbb{R}$ son Heyting pero no Booleanos.
@@ -166,8 +166,69 @@
     \end{itemize}
     
     \begin{exampleblock}{Conclusión}
-        Las Álgebras de Heyting son una \textbf{generalización} de las Booleanas donde el principio del tercero excluido no necesariamente se cumple.
+        Las álgebras de Heyting son una generalización de las Booleanas donde el principio del tercero excluido no necesariamente se cumple.
     \end{exampleblock}
 \end{frame}
+
+\begin{frame}{Álgebras Booleanas vs. Heyting}
+    En un álgebra Booleana, la implicación es \textit{definible}:
+    \[ x \Rightarrow y := \neg x \vee y \]
+    
+    \begin{block}{Teorema de Residuación}
+    Para todo $x, y, z$, se cumple la equivalencia:
+    \[ z \wedge x \leq y \iff z \leq (\neg x \vee y) \]
+    \end{block}
+
+    \begin{itemize}
+        \item \textbf{Solo si ($\Rightarrow$):} $z \wedge x \leq (\neg x \vee y) \wedge x = ( \neg x \wedge x) \vee (y \wedge x) = 0 \vee (y \wedge x) \leq y$.
+        \item \textbf{Si ($\Leftarrow$):} $z = z \wedge (\neg x \vee x) = (z \wedge \neg x) \vee (z \wedge x) \leq \neg x \vee y$.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{La estructura de Heyting}
+    Un Álgebra de Heyting es un retículo con $0$ y $1$ donde el funtor $( - \wedge x)$ tiene un \textbf{adjunto derecho} $(x \Rightarrow -)$.
+    
+    \begin{block}{Identidades Fundamentales}
+    \begin{enumerate}
+        \item $x \leq (y \Rightarrow (x \wedge y))$ (Unidad)
+        \item $y \wedge (y \Rightarrow x) \leq x$ (Counidad / Modus Ponens)
+        \item $x \Rightarrow (y \wedge z) = (x \Rightarrow y) \wedge (x \Rightarrow z)$ (Preserva ínfimos)
+        \item $(x \vee z) \Rightarrow y = (x \Rightarrow y) \wedge (z \Rightarrow y)$ (Contravariancia)
+    \end{enumerate}
+    \end{block}
+    
+     Toda Álgebra de Heyting es un retículo distributivo.
+\end{frame}
+
+\begin{frame}{La Negación de Heyting (Pseudocomplemento)}
+    La negación se define como la implicación al absurdo:
+    \[ \neg x := (x \Rightarrow 0) \]
+    
+    \begin{alertblock}{Propiedades Diferenciales}
+    A diferencia del caso Booleano, en una estructura de Heyting:
+    \begin{itemize}
+        \item $x \leq \neg \neg x$, pero no siempre $\neg \neg x = x$.
+        \item $x \wedge \neg x = 0$, pero no siempre $x \vee \neg x = 1$.
+    \end{itemize}
+    \end{alertblock}
+
+    \textbf{Ejemplo Geométrico:} En el retículo de abiertos de $\mathbb{R}$, $\neg U$ es el \textit{interior del complemento}. Si $U = (0,1)$, entonces $\neg U = (-\infty, 0) \cup (1, \infty)$. Notar que $U \cup \neg U \neq \mathbb{R}$.
+\end{frame}
+
+\begin{frame}{Caracterización Ecuacional de la Implicación}
+    Una operación $\Rightarrow$ define una estructura de Heyting si y solo si:
+    \begin{itemize}
+        \item $x \Rightarrow x = 1$
+        \item $x \wedge (x \Rightarrow y) = x \wedge y$
+        \item $y \wedge (x \Rightarrow y) = y$
+        \item $x \Rightarrow (y \wedge z) = (x \Rightarrow y) \wedge (x \Rightarrow z)$
+    \end{itemize}
+    \vfill
+    \begin{center}
+        \textbf{Conclusión:} Un Álgebra de Heyting es Booleana si y solo si $\neg \neg x = x$ para todo $x$.
+    \end{center}
+\end{frame}
+
+\end{document}
 
 \end{document}
